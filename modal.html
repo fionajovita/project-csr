@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+
+<script>
+     function getStudentName(){
+                var name = getCookie("name");
+                if (name != "") {
+                    document.getElementById('student-name').textContent = "Hello, " + name;
+                    modal.style.display = "none";
+                    
+                }
+                else{
+                    document.getElementById('student-name').textContent = "Hello, Firend";
+                    modal.style.display = "block";
+                }
+            }      
+    
+</script>
+</head>
+<body onload="getStudentName();">
+
+<!-- Get Username -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form onsubmit="return false;" method="post" name="myForm">
+        <label for="name">Enter name:</label><br>
+        <input type="text" name="name" id="name" maxlength="40"> 
+        <input name="Submit"  type="submit" value="Submit" onclick="handleForm()"/>
+    </form>
+  </div>
+
+</div>
+
+<div id="student-name"></div>
+    <div id="quizButton-div">
+    <button id="quizButton" onclick="location.href = '/quiz.html';"></button> 
+        <div class="button-txt">
+            Quiz
+        </div>
+    </div>
+    <div id="learnButton-div">
+    <button id="learnButton" onclick="location.href = '/modal.html';"></button> 
+        <div class="button-txt">
+            Learning
+        </div>
+    </div>
+
+    <script>
+
+        var modal = document.getElementById("myModal");
+        
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        var main_content = document.getElementById("name");
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        
+        
+            function handleForm(){
+                var name = document.getElementById("name").value;
+                document.cookie = "name=" + name +"; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
+                window.location.href = "/modal.html";
+            }
+        
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+        
+                var name = getCookie("name");
+                if (name != "") {
+                    
+                    document.getElementById('student-name').textContent = "Hello, " + name;
+                    modal.style.display = "none";
+                   
+                }
+                else{
+                    document.getElementById('student-name').textContent = "Hello, Firend";
+                    modal.style.display = "block";
+                }
+        
+    
+    
+              
+        </script>
+</body>
+</html>

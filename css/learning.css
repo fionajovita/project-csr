@@ -1,0 +1,121 @@
+
+
+@media screen and (max-width: 100px) {
+  .left, .main, .right {
+    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+* {box-sizing:border-box}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  transition: 0.6s ease;
+  
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 15px 0px 0px 15px;
+  right:  0;
+ 
+}
+.prev{
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+#homeButton{
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #7280BC;
+  font-weight: bold;
+  text-shadow: 1px 1px #7280BC;
+  color: #ffffff;
+  border-radius: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #7280BC;
+  cursor: pointer;
+
+  position: fixed ;
+  right: 0%;
+  top: 0%
+  
+
+}
+#homeButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#homeButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#homeButton:hover span {
+  padding-right: 25px;
+}
+
+#homeButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+

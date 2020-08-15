@@ -2,86 +2,31 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Goonj</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <style>
-        @media screen and (max-width: 100px) {
-    .left, .main, .right {
-      width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-html,body {
-    width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-#vertical{
-    height: 250px;
-    line-height: 250px;
-    text-align: center;
-
-}
-span{
-    font-size: 100px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
-
-.quest{
-    height: 250px;
-    width: 350px;
-    border-radius: 25px;
-    border: none;
-}
-#q1op1, #q2op1, #q3op1{
-
-    background: url('images/icecream.gif') no-repeat 50% 50%;
-}
-#q1op2, #q2op2, #q3op2{
-
-    background: url('images/bus.gif') no-repeat 50% 50%;
-}
-#q1op3, #q2op3, #q3op3{
-
-    background: url('images/doggo.gif') no-repeat 50% 50%;
-}
-#q1op4, #q2op4, #q3op4{
-
-    background: url('images/airplane.gif') no-repeat 50% 50%;
-}
-    </style>
-    
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/quiz.css"/>
 </head>
 <body>
     
 </body>
-    <p id="score"></p>
     <progress value="0" max="5" id="progressBar"></progress>
-   
+    <div id="homeButton-div">
+        <a id="homeButton" onclick="location.href = '/modal.html';"><span>Return to Home</span></a> 
+      </div>
 
     <div class="question-div" id="q1" style="display: none;">
         <audio controls loop id="q1m" style="display: none;">
-            <source src="/audio/Gangnam Style -.mp3" type="audio/mp3">
+            <source src="/audio/s.mp3" type="audio/mp3">
         </audio>
         <div>
-            <table class="questions">
+            <table>
+                
+                <img id="title" src="/images/title.png"/>
                 <tr>
                     <td><button class ="quest" id="q1op1" onclick="updateScore('q1','op1');" ></button></td>
                     <td><button class ="quest" id="q1op2" onclick="updateScore('q1','op2');" ></button></td>
@@ -93,12 +38,14 @@ span{
             </table>
         </div>
     </div>
+    </div>
     <div class="question-div" id="q2" style="display: none;">
-        <audio controls loop id="q1m" style="display: none;">
-            <source src="/audio/Gangnam Style -.mp3" type="audio/mp3">
+        <audio controls loop id="q2m" style="display: none;">
+            <source src="/audio/sh.mp3" type="audio/mp3">
         </audio>
         <div>
             <table class="questions">
+                <img id="title" src="/images/title.png"/>
                 <tr>
                     <td><button class ="quest" id="q2op1" onclick="updateScore('q2','op1');" ></button></td>
                     <td><button class ="quest" id="q2op2" onclick="updateScore('q2','op2');" ></button></td>
@@ -111,11 +58,12 @@ span{
         </div>
     </div>
     <div class="question-div" id="q3" style="display: none;">
-        <audio controls loop id="q1m" style="display: none;">
-            <source src="/audio/Gangnam Style -.mp3" type="audio/mp3">
+        <audio controls loop id="q3m" style="display: none;">
+            <source src="/audio/m.mp3" type="audio/mp3">
         </audio>
         <div>
             <table class="questions">
+                <img id="title" src="/images/title.png"/>
                 <tr>
                     <td><button class ="quest" id="q3op1" onclick="updateScore('q3','op1');" ></button></td>
                     <td><button class ="quest" id="q3op2" onclick="updateScore('q3','op2');" ></button></td>
@@ -127,7 +75,68 @@ span{
             </table>
         </div>
     </div>
-    <div id="intmd" style="display: none;">
+    <div class="question-div" id="q4" style="display: none;">
+        <audio controls loop id="q4m" style="display: none;">
+            <source src="/audio/a.mp3" type="audio/mp3">
+        </audio>
+        <div>
+            <table class="questions">
+                <img id="title" src="/images/title.png"/>
+                <tr>
+                    <td><button class ="quest" id="q4op1" onclick="updateScore('q4','op1');" ></button></td>
+                    <td><button class ="quest" id="q4op2" onclick="updateScore('q4','op2');" ></button></td>
+                </tr>
+                <tr>
+                    <td><button class ="quest" id="q4op3" onclick="updateScore('q4','op3');" ></button></td>
+                    <td><button class ="quest" id="q4op4" onclick="updateScore('q4','op4');" ></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-div" id="q5" style="display: none;">
+        <audio controls loop id="q5m" style="display: none;">
+            <source src="/audio/ee.mp3" type="audio/mp3">
+        </audio>
+        <div>
+            <table class="questions">
+                <img id="title" src="/images/title.png"/>
+                <tr>
+                    <td><button class ="quest" id="q5op1" onclick="updateScore('q5','op1');" ></button></td>
+                    <td><button class ="quest" id="q5op2" onclick="updateScore('q5','op2');" ></button></td>
+                </tr>
+                <tr>
+                    <td><button class ="quest" id="q5op3" onclick="updateScore('q5','op3');" ></button></td>
+                    <td><button class ="quest" id="q5op4" onclick="updateScore('q5','op4');" ></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-div" id="q6" style="display: none;">
+        <audio controls loop id="q6m" style="display: none;">
+            <source src="/audio/u.mp3" type="audio/mp3">
+        </audio>
+        <div>
+            <table class="questions">
+                <img id="title" src="/images/title.png"/>
+                <tr>
+                    <td><button class ="quest" id="q6op1" onclick="updateScore('q6','op1');" ></button></td>
+                    <td><button class ="quest" id="q6op2" onclick="updateScore('q6','op2');" ></button></td>
+                </tr>
+                <tr>
+                    <td><button class ="quest" id="q6op3" onclick="updateScore('q6','op3');" ></button></td>
+                    <td><button class ="quest" id="q6op4" onclick="updateScore('q6','op4');" ></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="intmd" style="display: none;"><img src="" id="intmd-img"/>
     </div>
 
     <div id="finalScore" style="display: none;">
@@ -135,120 +144,5 @@ span{
 
 
     
-    <script>
-        var q1 = document.getElementById("q1");
-        var q2 = document.getElementById("q2");
-        var q3 = document.getElementById("q3"); 
-        var q1m = document.getElementById("q1m"); 
-        
-        var q2m = document.getElementById("q2m");
-        var q3m = document.getElementById("q3m");
-        q1.style.display = "none";
-        window.onload = function(){
-            loader(q1, q1m);
-        }
-
-        var timeleft = 5;
-        var progressbar = document.getElementById("progressBar");
-        function loader(question, music){
-            var downloadTimer = setInterval(function(){
-            if(timeleft <= 0){
-                clearInterval(downloadTimer);
-                progressbar.style.display = "none";
-                question.style.display = "block";
-                music.play();
-            }
-                progressbar.value = 5 - timeleft;
-                timeleft -= 1;
-            }, 500);
-    }
-
-        function startTimer(duration, displayV, question) {
-
-            var timer = duration, seconds;
-            
-            var tmTracker = setInterval(function () {
-                seconds = parseInt(timer % 60);
-
-                displayV.textContent = seconds;
-
-                if(timer == 0){
-                    
-                    displayV.style.display = "none"
-                    question.style.display = "block";
-                    
-                }
-                if (--timer < 0) {
-                    timer = duration;
-                }
-                if(timer == 2){
-                    displayV.textContent = "Ready??"
-                }
-                if(timer == 1){
-                    displayV.textContent = "Set."
-                }
-                if(timer == 0){
-                    displayV.textContent = "Go!"
-                }
-            }, 1000);
-
-            
-        }
-        var score = 0;
-        var scoreDoc = document.querySelector("#score");
-        var finalScore = document.querySelector("#finalScore");
-        function updateScore(questionNumber, answer){
-            
-            
-            
-            var intmd = document.querySelector("#intmd");
-            progressbar.style.display = "block";
-            timeleft = 5;
-            
-            intmd.style.display="block";
-            if(questionNumber == "q1"){
-                q1.style.display = "none";
-                q1m.pause();
-                if(answer == "op2"){
-                    score+=1;
-                    
-                    intmd.textContent ="You guessed it right";
-                }else{
-                    intmd.textContent ="Wrong answer";
-                }
-                loader(q2, q2m);
-            }
-            if(questionNumber == "q2"){
-                q2.style.display = "none";
-                q2m.pause();
-                if(answer == "op1"){
-                    score+=1;
-                    
-                    intmd.textContent ="You guessed it right";
-                }else{
-                    intmd.textContent ="Wrong answer";
-                }
-                loader(q3, q3m);
-            }
-            if(questionNumber == "q3"){
-                
-                q3.style.display = "none";
-                q3m.pause();    
-                progressbar.style.display = "none";
-                scoreDoc.style.display = "none";
-                if(answer == "op2"){
-                    score+=1;
-                    
-                    intmd.textContent ="You guessed it right";
-                }else{
-                    intmd.textContent ="Wrong answer";
-                }
-                finalScore.style.display = "block";
-                finalScore.textContent = "You Scored "+score;
-            }
-            scoreDoc.textContent = score;
-        }
-
-        
-    </script>
+    <script src="js/quiz.js"></script>
 </html>

@@ -1,0 +1,168 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  
+  
+}
+
+/* Modal Content */
+.modal-content {
+  
+  background: url("../images/welcome-prompt.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  padding: 50px;
+  /* width: 45%; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -90px;
+  margin-left: -140px;
+  
+}
+
+/* The Close Button */
+.close {
+  background-image: url("../images/close-trans.png");
+  float: right;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#student-name{
+    overflow: hidden;
+}
+
+#submitbutton{
+
+  background-color: #6C81BB;
+
+  border-color: #6C81BB;
+
+  font-family: "Brush Script MT", cursive;  
+  align-content: center;
+}
+
+#quizButton{
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #7280BC;
+  font-weight: bold;
+  text-shadow: 1px 1px #7280BC;
+  color: #ffffff;
+  border-radius: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #7280BC;
+  cursor: pointer;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: 50px;
+
+}
+#quizButton-div{
+    float:left; 
+}
+
+#learnButton{
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #7280BC;
+  font-weight: bold;
+  text-shadow: 1px 1px #7280BC;
+  color: #ffffff;
+  border-radius: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #7280BC;
+  cursor: pointer;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 90px;
+  margin-left: -90px;
+  
+
+}
+#learnButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#learnButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#learnButton:hover span {
+  padding-right: 25px;
+}
+
+#learnButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#quizButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#quizButton span:before {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 50px;
+  transition: 0.5s;
+}
+
+#quizButton:hover span {
+  padding-left: 25px;
+}
+
+#quizButton:hover span::before {
+  opacity: 1;
+}
+
+body{
+  height: 100%;
+  background: url('../images/background.png') no-repeat center fixed;
+ background-size: contain;
+}
+#learnButton-div{
+    overflow: hidden;
+}
+

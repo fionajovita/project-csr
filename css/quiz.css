@@ -1,0 +1,174 @@
+
+
+@media screen and (max-width: 100px) {
+    .left, .main, .right {
+      width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#vertical{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+
+}
+#progressBar{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -50px;
+    
+}
+
+#title{
+    width: 50%;
+}
+
+.quest{
+    height: 200px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    
+}
+
+tr, td{
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 35px;
+}
+
+#q1op1, #q2op4{
+
+    background: url('../images/quiz-aeroplane.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    float: left;
+}
+#q1op2 {
+
+    background: url('../images/quiz-baby.png');
+    
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    float: left;
+}
+#q1op3 {
+
+    background: url('../images/quiz-brush.png');
+    
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    float: left;
+}
+#q1op4, #q2op3 {
+
+    background: url('../images/quiz-icecream.png');
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: center;
+    float: left;
+}
+#q2op1{
+
+    background: url('../images/quiz-snake.png');
+    
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: center;
+    float: left;
+}
+#q2op2 {
+
+    background: url('../images/quiz-train.png');
+    
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: center;
+    float: left;
+}
+
+#question-div{
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 90px;
+    margin-left: -90px;
+}
+
+#intmd-img{
+    
+    max-width: 100%;
+    height: auto; /* default */
+}
+
+
+#homeButton{
+      
+    position: fixed ;
+    right: 0%;
+    top: 0%;
+
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    background-color: #7280BC;
+    font-weight: bold;
+    text-shadow: 1px 1px #7280BC;
+    color: #ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #7280BC;
+    cursor: pointer;
+
+    
+  
+  }
+  #homeButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #homeButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #homeButton:hover span {
+    padding-right: 25px;
+  }
+  
+  #homeButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  

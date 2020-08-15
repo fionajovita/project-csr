@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="css/learning.css"/>
+        
+    </head>
+    <body>
+        <div class="slideshow-container">
+            <audio controls loop id="learning-audio" style="display: none;">
+              <source src="" type="audio/mp3">
+            </audio>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              
+              <img src="images/quiz-aeroplane.png">
+            </div>
+          
+            <div class="mySlides fade">
+              
+              <img src="images/quiz-baby.png">
+              
+            </div>
+          
+            <div class="mySlides fade">
+             
+              <img src="images/quiz-brush.png">
+              
+            </div>
+
+            <div class="mySlides fade">
+                
+                <img src="images/quiz-icecream.png">
+                
+              </div>
+
+              <div class="mySlides fade">
+               
+                <img src="images/quiz-snake.png">
+                
+              </div>
+
+              <div class="mySlides fade">
+                
+                <img src="images/quiz-train.png">
+                
+              </div>
+              <!-- Next and previous buttons -->
+            
+          </div>
+          <a class="prev" onclick="plusSlides(-1)" ><img src="images/prev-trans.png"/></a>
+          <a class="next" onclick="plusSlides(1)"><img src="images/next-trans.png"/></a>
+          <br>
+          <div id="homeButton-div">
+            <button id="homeButton" onclick="location.href = '/modal.html';"><span>Return to Home</span></button> 
+          </div>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+          <script src="js/learning.js"></script>
+    </body>
+</html>

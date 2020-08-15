@@ -5,39 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-<link rel="stylesheet" href="main.css">
-
-<script src="index.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="index.js"></script>
 </head>
+<title>Goonj</title>
 <body onload="getStudentName();">
 
 <!-- Get Username -->
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form onsubmit="return false;" method="post" name="myForm">
-        <label for="name">Enter name:</label><br>
+    <form onsubmit="return false;" method="post" name="myForm" id="myForm">
         <input type="text" name="name" id="name" maxlength="40"> 
-        <input name="Submit"  type="submit" value="Submit" onclick="handleForm();"/>
+        <input id="submitbutton" name="Submit"  type="submit" value="Submit" onclick="handleForm();"/>
     </form>
   </div>
+  
 
 </div>
-
-<div id="student-name"></div>
+    <div id="main-container">
+    <div id="student-name"></div>
     <div id="quizButton-div">
-    <button id="quizButton" onclick="location.href = '/quiz.html';"></button> 
-        <div class="button-txt">
-            Quiz
-        </div>
+    <button id="quizButton" onclick="location.href = '/quiz.html';"><span>Quiz</span></button> 
+
     </div>
     <div id="learnButton-div">
-    <button id="learnButton" onclick="location.href = '/modal.html';"></button> 
-        <div class="button-txt">
-            Learning
-        </div>
+    <button id="learnButton" onclick="location.href = '/learning.html';"><span>Learn</span></button> 
     </div>
-
+</div>
     <script>
 
         var modal = document.getElementById("myModal");

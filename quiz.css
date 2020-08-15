@@ -1,0 +1,57 @@
+@media screen and (max-width: 100px) {
+    .left, .main, .right {
+      width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+html,body {
+    width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#vertical{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+
+}
+span{
+    font-size: 100px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.quest{
+    height: 250px;
+    width: 350px;
+    border-radius: 25px;
+    border: none;
+}
+#q1op1, #q2op1, #q3op1{
+
+    background: url('images/icecream.gif') no-repeat 50% 50%;
+}
+#q1op2, #q2op2, #q3op2{
+
+    background: url('images/bus.gif') no-repeat 50% 50%;
+}
+#q1op3, #q2op3, #q3op3{
+
+    background: url('images/doggo.gif') no-repeat 50% 50%;
+}
+#q1op4, #q2op4, #q3op4{
+
+    background: url('images/airplane.gif') no-repeat 50% 50%;
+}

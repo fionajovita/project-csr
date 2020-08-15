@@ -26,13 +26,12 @@
         return "";
     }
 
-
     var name = getCookie("name");
     if (name != "") {
         window.location.href = "/option.html";
     } 
 </script>
-<body>
+<body >
     <form onsubmit="return false;" method="post" name="myForm">
         <label for="name">Enter name:</label><br>
         <input type="text" name="name" id="name" maxlength="40"> 

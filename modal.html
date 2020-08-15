@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 <link rel="stylesheet" href="main.css">
 
-<script>
-     function getStudentName(){
-                var name = getCookie("name");
-                if (name != "") {
-                    document.getElementById('student-name').textContent = "Hello, " + name;
-                    modal.style.display = "none";
-                    
-                }
-                else{
-                    document.getElementById('student-name').textContent = "Hello, Firend";
-                    modal.style.display = "block";
-                }
-            }      
-    
-</script>
+<script src="index.js"></script>
 </head>
 <body onload="getStudentName();">
 
@@ -29,7 +18,7 @@
     <form onsubmit="return false;" method="post" name="myForm">
         <label for="name">Enter name:</label><br>
         <input type="text" name="name" id="name" maxlength="40"> 
-        <input name="Submit"  type="submit" value="Submit" onclick="handleForm()"/>
+        <input name="Submit"  type="submit" value="Submit" onclick="handleForm();"/>
     </form>
   </div>
 

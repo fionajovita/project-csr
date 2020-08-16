@@ -11,8 +11,10 @@ var q4m = document.getElementById("q4m");
 var q5m = document.getElementById("q5m");
 var q6m = document.getElementById("q6m");
 var intmd = document.querySelector("#intmd");
+var play_again = document.querySelector("#play-again");
 var intmd_img = document.querySelector("#intmd-img");
 q1.style.display = "none";
+play_again.style.display = "none";
 window.onload = function(){
     loader(q1, q1m);
 }
@@ -30,7 +32,20 @@ function loader(question, music){
     }
         progressbar.value = 5 - timeleft;
         timeleft -= 1;
-    }, 500);
+    }, 1000);
+}
+
+function loaderForLastQ(score){
+    var downloadTimer2 = setInterval(function(){
+    if(timeleft <= 0){
+        clearInterval(downloadTimer2);
+        progressbar.style.display = "none";
+        intmd.style.display ="none";
+        showScore(score);
+    }
+        progressbar.value = 5 - timeleft;
+        timeleft -= 1;
+    }, 1000);
 }
 
 var score = 0;
@@ -45,9 +60,11 @@ function updateScore(questionNumber, answer){
         q1m.pause();
         if(answer == "op2"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
         
         intmd.style.display ="block";
@@ -58,9 +75,11 @@ function updateScore(questionNumber, answer){
         q2m.pause();
         if(answer == "op1"){
             score+=1;              
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
         
         intmd.style.display ="block";
@@ -70,11 +89,13 @@ function updateScore(questionNumber, answer){
         
         q3.style.display = "none";
         q3m.pause();    
-        if(answer == "op2"){
+        if(answer == "op3"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
 
         
@@ -85,11 +106,13 @@ function updateScore(questionNumber, answer){
         
         q4.style.display = "none";
         q4m.pause();    
-        if(answer == "op2"){
+        if(answer == "op4"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
         intmd.style.display ="block";
         loader(q5, q5m);
@@ -99,11 +122,13 @@ function updateScore(questionNumber, answer){
         
         q5.style.display = "none";
         q5m.pause();    
-        if(answer == "op2"){
+        if(answer == "op3"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
         intmd.style.display ="block";
         loader(q6, q6m);
@@ -116,16 +141,21 @@ function updateScore(questionNumber, answer){
         progressbar.style.display = "none";
         if(answer == "op2"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png"
+            intmd_img.src="../images/right-answer.png";
+            play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png"
+            intmd_img.src="../images/wrong-answer.png";
+            play_again.style.display = "block";
         }
-        showScore(score);
+        // await new Promise(r => setTimeout(r, 7000));
+        play_again.style.display = "none";
+        loaderForLastQ(score);
     }
 
 }
 
 function showScore(score){
+    intmd.style.display ="block";
     if(score ==6){
         intmd_img.src = "../images/topscore.png";
     }else{

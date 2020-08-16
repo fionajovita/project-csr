@@ -17,7 +17,7 @@
   #secondary { width:100%; margin:0; border:none; }
 }
 
-* {box-sizing:border-box}
+* {box-sizing:border-box;}
 
 
 /* Next & previous buttons */
@@ -27,7 +27,6 @@
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
   transition: 0.6s ease;
   
   user-select: none;
@@ -36,7 +35,7 @@
 /* Position the "next button" to the right */
 .next {
   border-radius: 15px 0px 0px 15px;
-  right:  0;
+  right:  -4%;
  
 }
 .prev{
@@ -48,6 +47,10 @@
   background-color: rgba(0,0,0,0.1);
 }
 
+.prev img, .next img{
+  height: 75%;
+  width: 75%;
+}
 
 
 /* The dots/bullets/indicators */
@@ -75,47 +78,100 @@
 }
 
 
-#homeButton{
-  padding: 10px 15px 11px !important;
-  font-size: 18px !important;
-  background-color: #7280BC;
-  font-weight: bold;
-  text-shadow: 1px 1px #7280BC;
-  color: #ffffff;
-  border-radius: 10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #7280BC;
-  cursor: pointer;
 
+
+
+
+#homeButton{
+      
   position: fixed ;
   right: 0%;
-  top: 0%
-  
+  top: 0%;
+  height: 90px;
+  width: 100px;
+  background-image: url("../images/home-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;  
+  border: none;
 
 }
-#homeButton span {
-  cursor: pointer;
-  display: inline-block;
+@media only screen
+{
+    
+.mySlides{
+  max-width:75%;
+  max-height: 100%;
+  overflow: hidden;
   position: relative;
-  transition: 0.5s;
+  left: 20%;
+  margin-top: 150px;
+  padding-left: 150px;
 }
-
-#homeButton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    
+    
 }
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px)
+{
+    
+.mySlides{
+  max-width:100%;
+  max-height: 100%;
+ 
+  overflow: hidden;
+  position: relative;
+  left: 0%;
+  margin-top: 500px;
+  padding-left: 150px;
 
-#homeButton:hover span {
-  padding-right: 25px;
 }
+    
 
-#homeButton:hover span:after {
-  opacity: 1;
-  right: 0;
 }
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
 
+  .mySlides{
+    max-width:75%;
+    max-height: 100%;
+   
+    overflow: hidden;
+    position: relative;
+    left: 25%;
+    margin-top: 150px;
+    padding-left: 150px;
+  
+  }
+    
+}
+@media only screen and (max-width: 768px) {
+  
+.mySlides{
+  max-width:100%;
+  max-height: 100%;
+ 
+  overflow: hidden;
+  position: relative;
+  left: 0%;
+  margin-top: 400px;
+  padding-left: 100px;
+
+}
+  }
+
+  @media only screen and (max-width: 653px) {
+  
+    .mySlides{
+      max-width:200%;
+      max-height: 100%;
+     
+      overflow: hidden;
+      position: relative;
+      left: -20%;
+      margin-top: 400px;
+      margin-left: -50px;
+    
+    }
+      }

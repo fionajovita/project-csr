@@ -22,6 +22,7 @@ window.onload = function(){
 var timeleft = 5;
 var progressbar = document.getElementById("progressBar");
 function loader(question, music){
+
     var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
         clearInterval(downloadTimer);

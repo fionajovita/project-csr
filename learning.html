@@ -7,14 +7,21 @@
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" href="images/icon-1.png" type="image/png">
         <link rel="stylesheet" href="css/learning.css"/>
-        
     </head>
     <body>
+      <div ><img id="name-banner" src="images/Goonj-title.png"/></div>
+      <div id="homeButton-div">
+        <button id="homeButton" onclick="location.href = '/';"></button> 
+      </div>
         <div class="slideshow-container">
-            <audio controls loop id="learning-audio" style="display: none;">
-              <source src="" type="audio/mp3">shrink
+            <audio controls autoplay loop id="learning-audio" style="display: none;" src="">
+              <!-- <source src="audio/a.mp3" type="audio/mp3">shrink -->
             </audio>
             <!-- Full-width images with number and caption text -->
+              <!-- <div class="mySlides fade">
+                
+                Start
+              </div> -->
             <div class="mySlides fade">
               
               <img id="slideshow" src="images/quiz-aeroplane-resize.png">
@@ -55,9 +62,7 @@
           <a class="prev" onclick="plusSlides(-1)" ><img id="slideshow" src="images/prev-trans.png"/></a>
           <a class="next" onclick="plusSlides(1)"><img id="slideshow" src="images/next-trans.png"/></a>
           <br>
-          <div id="homeButton-div">
-            <button id="homeButton" onclick="location.href = '/modal.html';"></button> 
-          </div>
+
           
           <!-- The dots/circles -->
           <div style="text-align:center">
@@ -67,7 +72,9 @@
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
+            <!-- <span class="dot" onclick="currentSlide(7)"></span> -->
           </div>
-          <script src="js/learning.js"></script>
+          
+        <script src="js/learning.js" type="text/javascript"></script>
     </body>
 </html>

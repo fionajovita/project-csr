@@ -1,6 +1,7 @@
 var slideIndex = 1;
 
 var learn_audio = document.querySelector("#learning-audio");
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -13,6 +14,9 @@ function currentSlide(n) {
 }
 function playAudio(n){
   switch(n){
+    // case 1:
+    //   learn_audio.src="../audio/Gangnam Style -.mp3";
+    //   break;
     case 1:
       learn_audio.src ="../audio/a.mp3";
       break;
@@ -31,8 +35,10 @@ function playAudio(n){
     case 6:
       learn_audio.src ="../audio/u.mp3";
       break;
+
     
   }
+  
   learn_audio.play();
 }
 

@@ -15,12 +15,21 @@ var play_again = document.querySelector("#play-again");
 var intmd_img = document.querySelector("#intmd-img");
 q1.style.display = "none";
 play_again.style.display = "none";
+var playButton = document.querySelector("#playButton");
+
 window.onload = function(){
     loader(q1, q1m);
 }
 
+
 var timeleft = 5;
 var progressbar = document.getElementById("progressBar");
+
+function readyToPlay(){
+    playButton.style.display = "none";
+    progressbar.style.display = "block";
+    loader(q1, q1m);
+}
 function loader(question, music){
 
     var downloadTimer = setInterval(function(){
@@ -29,6 +38,7 @@ function loader(question, music){
         progressbar.style.display = "none";
         question.style.display = "block";
         intmd.style.display ="none";
+        
         music.play();
     }
         progressbar.value = 5 - timeleft;

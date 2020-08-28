@@ -17,6 +17,8 @@
   #secondary { width:100%; margin:0; border:none; }
 }
 
+
+
 * {box-sizing:border-box;}
 
 
@@ -84,18 +86,20 @@
 
 #homeButton{
       
-  position: fixed ;
+  position: absolute ;
   right: 0%;
   top: 0%;
-  height: 90px;
+  height: 85px;
   width: 100px;
-  background-image: url("../images/home-icon.png");
+  background-image: url("../images/home-icon-1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;  
   border: none;
+  margin: 10px 10px 0px 0px;
 
 }
+
 @media only screen
 {
     
@@ -104,11 +108,13 @@
   max-height: 100%;
   overflow: hidden;
   position: relative;
-  left: 20%;
+  left: 23%;
   margin-top: 150px;
   padding-left: 150px;
 }
-    
+#name-banner{
+  width: 100%;
+}
     
 }
 /* On screens with a maximum window width of 1280px */
@@ -126,7 +132,10 @@
   padding-left: 150px;
 
 }
-    
+#homeButton{
+  height: 43px;
+  width: 50px;
+}
 
 }
 /* On all screen types with a window width of between 1024px and 1280px */
@@ -144,7 +153,10 @@
     padding-left: 150px;
   
   }
-    
+  #homeButton{
+    height: 43px;
+    width: 50px;
+}
 }
 @media only screen and (max-width: 768px) {
   
@@ -158,6 +170,10 @@
   margin-top: 400px;
   padding-left: 100px;
 
+}
+#homeButton{
+  height: 43px;
+  width: 50px;
 }
   }
 
@@ -174,4 +190,11 @@
       margin-left: -50px;
     
     }
+    #homeButton{
+      height: 43px;
+      width: 50px;
+  }
       }
+      /* body{
+        background: url("../images/bck.jpg");
+      } */

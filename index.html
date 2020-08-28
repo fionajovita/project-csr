@@ -31,7 +31,7 @@
 
 </div>
     <div id="main-container">
-    <!-- <div id="student-name"></div> -->
+    <img src="images/background.png" id="background-img">
     <div id="quizButton-div">
     <button id="quizButton" onclick="location.href = '/quiz.html';"><span>Quiz</span></button> 
 
@@ -64,7 +64,7 @@
             function handleForm(){
                 var name = document.getElementById("name").value;
                 document.cookie = "name=" + name +"; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
-                window.location.href = "/modal.html";
+                window.location.href = "/index.html";
             }
         
             function getCookie(cname) {

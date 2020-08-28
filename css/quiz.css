@@ -11,7 +11,7 @@
     top: 50%;
     left: 50%;
     margin-top: 20px;
-    margin-left: -50px;
+    margin-left: -100px;
     
 }
 
@@ -24,11 +24,28 @@
     
 }
   
-tr, td{
-    margin-left: 35px;
-    margin-right: 35px;
-    padding: 35px;
+#playButton{
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    background-color: #7280BC;
+    font-weight: bold;
+    text-shadow: 1px 1px #7280BC;
+    color: #ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #7280BC;
+    cursor: pointer;
+  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 90px;
+    margin-left: -90px;
+
+
 }
+
 
 #q1op1, #q2op4, #q5op3, #q6op4{
 
@@ -109,7 +126,7 @@ tr, td{
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: 60px;
+    margin-top: 110px;
     margin-left: 110px;
     height: 32px;
     width: 32px;
@@ -119,18 +136,22 @@ tr, td{
 play-again:hover{
     background-color: rgba(0,0,0,0.1);
 }
+#name-banner{
+    width: 100%;
+  }
 
 #homeButton{
-    position: fixed ;
+    position: absolute ;
     right: 0%;
     top: 0%;
     height: 90px;
     width: 100px;
-    background-image: url("../images/home-icon.png");
+    background-image: url("../images/home-icon-1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     cursor: pointer;  
     border: none;
+    margin: 10px 10px 0px 0px;
   
   }
 /* On all vertically oriented types of screens */
@@ -138,16 +159,36 @@ play-again:hover{
 {
     .question-div{
 
-        overflow: hidden;
+        /* overflow: hidden; */
         position: fixed;
-        left: 25%;
-        margin-top: 40px;
+        left: 30%;
     }
     #title{
         width: 50%;
         margin-left: 50px;
     }
+    tr, td{
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 10px;
+    }
     
+#intmd-img{
+    
+    max-width:500px;
+    max-height:750px;   
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px;
+      
+}
+#progressBar{
+    margin-top: 80px;
+    
+}
     
 }
 /* On screens with a maximum window width of 1280px */
@@ -165,7 +206,16 @@ play-again:hover{
         width: 50%;
         margin-left: 100px;
     }
-    
+    tr, td{
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 35px;
+    }
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
+ 
 
 }
 /* On all screen types with a window width of between 1024px and 1280px */
@@ -183,7 +233,15 @@ play-again:hover{
         width: 50%;
         margin-left: 150px;
     }
-    
+    tr, td{
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 35px;
+    }
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .question-div{
@@ -199,7 +257,17 @@ play-again:hover{
         margin-left: 150px;
     }
     
+    tr, td{
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 35px;
+    }
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
   }
+
 
 
   

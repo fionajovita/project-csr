@@ -1,15 +1,22 @@
-.learning, .quiz{
-
+.quiz, .learning{
+  height: 200px;
+  width: 250px;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  left: 50%;
+  top: 50%;
 }
 #quizNum1{
 
   background: url('../images/quiz-aeroplane-resize.png');
-    
   background-repeat: no-repeat;
   background-size:80%;
   background-position: center;
   float: left;
   margin: 0px 50px 0px 0px;
+
+
  
 }
 #quizNum2{
@@ -27,37 +34,43 @@
 #quizNum3{
 
   background: url('../images/quiz-icecream-resize.png');
- 
+  background-repeat: no-repeat;
+  background-size:80%;
+  background-position: center;
+  float: left;
+  margin: 0px 50px 0px 0px;
 }
 
 #learnModule1{
 
   background: url('../images/quiz-aeroplane-resize.png');
- 
+  background-repeat: no-repeat;
+  background-size:80%;
+  background-position: center;
+  float: left;
+  margin: 0px 50px 0px 0px;
 }
 #learnModule2{
 
   background: url('../images/quiz-brush-resize.png');
-  
+  background-repeat: no-repeat;
+  background-size:80%;
+  background-position: center;
+  float: left;
+  margin: 0px 50px 0px 0px;
 }
 
 #learnModule3{
 
   background: url('../images/quiz-icecream-resize.png');
- 
+  background-repeat: no-repeat;
+  background-size:80%;
+  background-position: center;
+  float: left;
+  margin: 0px 50px 0px 0px;
 }
 
-
-.quest{
-    height: 200px;
-    width: 250px;
-    border-radius: 25px;
-    border: none;
-    position: relative;
-    left: 50%;
-    top: 50%;
-  }
-  .main-div{
+.main-div{
 
     position: fixed;
     left: 5%;

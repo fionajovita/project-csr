@@ -18,24 +18,17 @@ function playAudio(n){
     //   learn_audio.src="../audio/Gangnam Style -.mp3";
     //   break;
     case 1:
-      learn_audio.src ="../audio/a.mp3";
+      learn_audio.src ="../audio/sit.mp3";
       break;
     case 2:
-      learn_audio.src ="../audio/sh.mp3";
+      learn_audio.src ="../audio/fish.mp3";
       break;
     case 3:
-      learn_audio.src ="../audio/ee.mp3";
+      learn_audio.src ="../audio/up.mp3";
       break;  
     case 4:
-      learn_audio.src ="../audio/m.mp3";
+      learn_audio.src ="../audio/go.mp3";
       break;
-    case 5:
-      learn_audio.src ="../audio/s.mp3";
-      break;
-    case 6:
-      learn_audio.src ="../audio/u.mp3";
-      break;
-
     
   }
   

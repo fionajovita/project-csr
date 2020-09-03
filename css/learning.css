@@ -46,7 +46,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .prev img, .next img{
@@ -67,7 +67,7 @@
   transition: background-color 0.6s ease;
 }
 
-.dot:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 
@@ -77,6 +77,15 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
@@ -136,7 +145,7 @@
 
 }
 /* On all screen types with a window width of between 1024px and 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px)
+/* @media all and (min-width: 1024px) and (max-width: 1280px)
 {
 
   .mySlides{
@@ -191,7 +200,7 @@
       height: 43px;
       width: 50px;
   }
-      }
+      } */
       /* body{
         background: url("../images/bck.jpg");
       } */

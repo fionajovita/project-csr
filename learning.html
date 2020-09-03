@@ -9,6 +9,21 @@
         <link rel="stylesheet" href="css/learning.css"/>
              
         <link rel="stylesheet" href="css/learning-main.css"/>
+        <script>
+            function writeCookie(moduleValue){
+                var cookie = "";
+                switch(moduleValue){
+                    case 1: cookie = 'module1';
+                    break;
+                    case 2: cookie = 'module2';
+                    break;
+                    case 3: cookie = 'module3';
+                    break;
+                }
+                document.cookie= cookie+"=" + cookie;
+                document.write ("Setting Cookies : " + cookie+"=" + cookie );
+            }
+        </script>
     </head>
     <body>
         <div><img id="name-banner" src="images/Goonj-title.png"/></div>

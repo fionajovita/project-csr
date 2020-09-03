@@ -64,7 +64,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 #quizButton{
-  padding: 10px 15px 11px !important;
+  padding: 10px 15px 11px 5px!important;
   font-size: 18px !important;
   background-color: #7280BC;
   font-weight: bold;
@@ -115,23 +115,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   transition: 0.5s;
 }
 
-#learnButton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#learnButton:hover span {
-  padding-right: 25px;
-}
-
-#learnButton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 #quizButton span {
   cursor: pointer;
@@ -140,22 +123,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   transition: 0.5s;
 }
 
-#quizButton span:before {
-  content: '\00AB';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: 50px;
-  transition: 0.5s;
-}
 
-#quizButton:hover span {
-  padding-left: 25px;
-}
-
-#quizButton:hover span::before {
-  opacity: 1;
-}
 /* 
 body{
 
@@ -166,86 +134,33 @@ body{
 #learnButton-div{
     overflow: hidden;
 }
-.wrap {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
 }
-
-.button {
-  min-width: 300px;
-  min-height: 60px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  font-weight: 700;
-  color: #313133;
-  background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-  transition: all 0.3s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  padding: 10px;
-  }
-
-button::before {
-content: '';
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00FFCB;
-  box-shadow: 0 0 60px rgba(0,255,203,.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s ease-in-out 0s;
+.arrow2{
+  animation: slide2 1s ease-in-out infinite;
+  margin-left: 9px;
 }
-
-.button:hover, .button:focus {
-  color: #313133;
-  transform: translateY(-6px);
-}
-
-button:hover::before, button:focus::before {
-  opacity: 1;
-}
-
-button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid #00FFCB;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
-}
-
-button:hover::after, button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
+@keyframes slide1 {
+  0%,
   100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+@keyframes slide2 {
+  0%,
+  100% {
+    transform: translate(0, 0) ;
+  }
+
+  50% {
+    transform: translate(10px, 0);
   }
 }
 @media only screen

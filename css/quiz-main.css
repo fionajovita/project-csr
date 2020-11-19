@@ -1,0 +1,149 @@
+body{   
+    background: url('../images/whitespace-2.jpg') repeat-y;
+  background-size: 100%;
+    /* background-repeat: repeat;    */
+}
+body::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+.quiz{
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50px;
+    border: none;
+  }
+  #quizNum1{
+    background: url('../images/quiz1.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    float: left;
+ 
+  }
+  #quizNum2{
+  
+    background: url('../images/quiz2.png');
+      
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    float: left;
+  }
+  
+  #quizNum3{
+  
+    background: url('../images/quiz3.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    float: left;
+  }
+  
+
+  
+
+
+#name-banner{
+    width: 100%;
+  }
+
+#homeButton{
+    position: absolute ;
+    right: 0%;
+    top: 0%;
+    height: 90px;
+    width: 100px;
+    background-image: url("../images/home-icon-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;  
+    border: none;
+    margin: 10px 10px 0px 0px;
+  
+  }
+    
+/* On all vertically oriented types of screens */
+@media( min-width: 375px) {
+
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
+    .main-div{
+  
+        position: fixed;
+        top: 15%;
+        left: 25%;
+    }
+    .quiz{
+        margin: 25px;
+    }
+  }
+@media only screen
+{
+    #homeButton{
+        height: 90px;
+        width: 100px;
+    }
+    .main-div{
+  
+        position: fixed;
+        top: 25%;
+        left: 20%;
+    }    
+}
+
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px)
+{
+   #homeButton{
+        height: 50px;
+        width: 50px;
+    }
+    .main-div{
+  
+        position: fixed;
+        top: 25%;
+        left: 25%;
+    }
+}
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
+    .main-div{
+  
+        position: fixed;
+        top: 25%;
+        left: 25%;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+
+    #homeButton{
+        height: 50px;
+        width: 50px;
+    }
+    .main-div{
+  
+        position: fixed;
+        top: 15%;
+        left: 25%;
+    }
+  }
+
+
+
+
+
+    

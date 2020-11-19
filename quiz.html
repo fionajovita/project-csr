@@ -5,10 +5,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <link rel="icon" href="images/icon-1.png" type="image/png">
-        
-        <link rel="stylesheet" href="css/learning-main.css"/>
-        <link rel="stylesheet" href="css/quiz.css"/>
-             
+        <title>Paheli Goonj</title>
+        <link rel="stylesheet" href="css/quiz-main.css"/>
+        <script>
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            function checkIfModuleCompleted(moduleName){
+                if(moduleName=="1"){
+                    var name1 = document.cookie.match ( '(^|;) ?' + "module1" + '=([^;]*)(;|$)' );
+                    var name2 = document.cookie.match ( '(^|;) ?' + "module2" + '=([^;]*)(;|$)' );
+                    if(name1 && name2)
+                    {
+                        window.location.href = "/quiz1.html";
+                    }
+                    else{
+                        alert('You have not completed the Learning Module! Please Come back once you have completed Long Sounds and Intermittent Sounds')
+                        window.location.href = "/learning.html";
+                    }
+                }
+                else if(moduleName=="2"){
+                    var name1 = document.cookie.match ( '(^|;) ?' + "module1" + '=([^;]*)(;|$)' );
+                    var name2 = document.cookie.match ( '(^|;) ?' + "module3" + '=([^;]*)(;|$)' );
+                    
+                    if(name1 && name2)
+                    {
+                        window.location.href = "/quiz2.html";
+                    }
+                    else{
+                        alert('You have not completed the Learning Module! Please Come back once you have completed Long Sounds and Short Sounds')
+                        window.location.href = "/learning.html";
+                    }
+                }
+                else if(moduleName=="3"){
+                    var name1 = document.cookie.match ( '(^|;) ?' + "module1" + '=([^;]*)(;|$)' );
+                    var name2 = document.cookie.match ( '(^|;) ?' + "module2" + '=([^;]*)(;|$)' );
+                    var name3 = document.cookie.match ( '(^|;) ?' + "module3" + '=([^;]*)(;|$)' );
+                    
+                    if(name1 && name2 && name3)
+                    {
+                        window.location.href = "/quiz3.html";
+                    }
+                    else{
+                        alert('You have not completed the Learning Module! Please Come back once you have completed all 3 modules')
+                        window.location.href = "/learning.html";
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <div><img id="name-banner" src="images/Goonj-title.png"/></div>
@@ -16,13 +71,11 @@
             <a id="homeButton" onclick="location.href = '/';"></a> 
           </div>
           <div class="main-div">
-          <table class="questions">
-              <tr>
-                    <td><button class ="quiz" id="quizNum1" onclick="location.href = '/quiz1.html';" ></button></td>
-                    <td><button class ="quiz" id="quizNum2" onclick="location.href = '/quiz2.html';" ></button></td>
-                    <td><button class ="quiz" id="quizNum3" onclick="location.href = '/quiz3.html';" ></button></td>
-              </tr>
-          </table>
+          
+            <button class ="quiz" id="quizNum1" onclick="checkIfModuleCompleted(1);" ></button>
+            <button class ="quiz" id="quizNum2" onclick="checkIfModuleCompleted(2);" ></button>
+            <button class ="quiz" id="quizNum3" onclick="checkIfModuleCompleted(3);" ></button>
+            
         </div>
     </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="icon" href="images/icon-1.png" type="image/png">
+        
+        <title> Paheli Goonj</title>             
+        <link rel="stylesheet" href="css/learning-main.css"/>
+        <style>
+            
+            #learnModule1{
+
+            /* background: url('../images/module1.png'); */
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: center;
+            float: left;
+            }
+            #learnModule2{
+
+            /* background: url('../images/module2.jpg'); */
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: center;
+            float: left;
+            }
+
+            #learnModule3{
+
+            /* background: url('../images/module3.png'); */
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: center;
+            float: left;
+            }
+            .learning{
+            height: 100px;
+            width: 200px;
+            border-radius: 25px;
+            border: none;
+            margin-bottom: 50px;
+
+            }
+            td{
+                padding-left: 50px;
+            }
+            
+        </style>
+        <script>
+            var lessons = [
+                { lessonName: "Fruits", imageList:['images/mango.png', 'images/grapes.png','images/pineapple.png']},
+                { lessonName: "Animals", imageList:['images/mango.png', 'images/grapes.png','images/pineapple.png']}
+            
+            ]
+
+            function getBtnList(){
+                var btn = document.createElement("button");
+
+                       var t = document.createTextNode(listBrand[i]);
+                       btn.appendChild(t);
+                       document.body.appendChild(btn);
+            }
+            // function writeCookie(moduleValue){
+            //     var cookie = moduleValue;
+            //     document.cookie= cookie+"=" + cookie +"; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
+            //     if(moduleValue =="module1")
+            //         window.location.href = "/learning1.html";
+            //     else if(moduleValue =="module2")
+            //         window.location.href = "/learning2.html";
+            //     else if(moduleValue =="module3")
+            //         window.location.href = "/learning3.html";       s         
+                
+            // }
+        
+        </script>
+    </head>
+    <body>
+        <div><img id="name-banner" src="images/Goonj-title.png"/></div>
+        <div id="homeButton-div">
+            <a id="homeButton" onclick="location.href = '/';"></a> 
+          </div>
+          <div class="main-div" onload="getBtnList();">
+          
+        </div>
+    </body>
+</html>

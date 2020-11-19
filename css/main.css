@@ -79,8 +79,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -25px;
-  margin-left: 50px;
+  margin-top: 0px;
+  margin-left: 0px;
 
 }
 #quizButton-div{
@@ -103,8 +103,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: 90px;
-  margin-left: -90px;
+  margin-top: 120px;
+  margin-left: -140px;
   
 
 }
@@ -169,7 +169,7 @@ body{
     position: fixed;
    
     left: 25%;
-    width: 50%;
+    width: 45%;
     height: auto;
   }   
     
@@ -185,8 +185,19 @@ body{
     width: 100%;
     height: auto;
   }   
+  
+  #quizButton{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+  #learnButton{
+    margin-top: 190px;
+    margin-left: -100px;
+
+  }
 
 }
+
 /* On all screen types with a window width of between 1024px and 1280px */
 @media all and (min-width: 1024px) and (max-width: 1280px)
 {
@@ -197,6 +208,16 @@ body{
     left: 25%;
     width: 50%;
     height: auto;
+  }
+  
+  #quizButton{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+  #learnButton{
+    margin-top: 190px;
+    margin-left: -100px;
+
   }
 
 }
@@ -209,7 +230,34 @@ body{
     width: 100%;
     height: auto;
   }
+  #quizButton{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+  #learnButton{
+    margin-top: 190px;
+    margin-left: -100px;
 
+  }
+
+}
+@media only screen and (max-width: 1080px) {
+  
+  #background-img{
+    position: fixed;
+    top: 24%;
+    width: 100%;
+    height: auto;
+  }
+  #quizButton{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+  #learnButton{
+    margin-top: 190px;
+    margin-left: -100px;
+
+  }
 }
 
 @media only screen and (max-width: 653px) {
@@ -221,5 +269,7 @@ body{
     height: auto;
   }
 }
+
+
 
 

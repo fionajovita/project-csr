@@ -88,7 +88,23 @@
   to {opacity: 1}
 }
 
+#learningButton{
+  position: absolute ;
+  /* left: 0%; */
+  top: 0%;
+  height: 90px;
+  width: 100px;
+  background-image: url("../images/back.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;  
+  border: none;
+  margin: 10px 0px 0px 0px;
+}
 
+#learningButton:hover{
+  cursor: pointer;
+}
 
 #homeButton{
       
@@ -109,18 +125,43 @@
 @media only screen
 {
     
-.mySlides{
-  max-width:75%;
-  max-height: 100%;
-  overflow: hidden;
-  position: relative;
-  left: 23%;
-  margin-top: 150px;
-  padding-left: 150px;
-}
-#name-banner{
-  width: 100%;
-}
+  .mySlides{
+    /* max-width:200%;
+    max-height: 100%; */
+   
+    overflow: hidden;
+    position: relative;
+    margin-top: 0px;
+    margin-left: -50px;
+  
+  }
+  #homeButton{
+    height: 85px;
+    width: 100px;
+  }
+  #learningButton{
+    height: 85px;
+    width: 100px;
+  }  
+  audio{
+    position: relative;
+    left: 40%;
+    top: 0px; 
+
+  }
+  .mySlides{
+    max-width:100%;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 33%;
+    /* margin-top: 150px; */
+    /* padding-left: 150px; */
+  }
+
+  #name-banner{
+    width: 100%;
+  }
     
 }
 /* On screens with a maximum window width of 1280px */
@@ -138,14 +179,25 @@
   padding-left: 150px;
 
 }
+
+audio{
+  position: relative;
+  left: 35%;
+  top: 450px;
+
+}
 #homeButton{
+  height: 43px;
+  width: 50px;
+}
+#learningButton{
   height: 43px;
   width: 50px;
 }
 
 }
 /* On all screen types with a window width of between 1024px and 1280px */
-/* @media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1280px)
 {
 
   .mySlides{
@@ -155,14 +207,25 @@
     overflow: hidden;
     position: relative;
     left: 25%;
-    margin-top: 150px;
-    padding-left: 150px;
+    margin-top: 350px;
+    padding-left: 50px;
   
   }
-  #homeButton{
-    height: 43px;
-    width: 50px;
+  
+audio{
+  position: relative;
+  left: 35%;
+  top: 350px;
+
 }
+  #homeButton{
+      height: 80px;
+      width: 90px;
+  }
+  #learningButton{
+    height: 80px;
+      width: 90px;
+  }
 }
 @media only screen and (max-width: 768px) {
   
@@ -174,13 +237,23 @@
   position: relative;
   left: 0%;
   margin-top: 400px;
-  padding-left: 100px;
+  padding-left: 150px;
 
-}
-#homeButton{
-  height: 43px;
-  width: 50px;
-}
+  }
+  audio{
+    position: relative;
+    left: 30%;
+    top: 400px;
+
+  }
+  #homeButton{
+    height: 43px;
+    width: 50px;
+  }
+  #learningButton{
+    height: 43px;
+    width: 50px;
+  }
   }
 
   @media only screen and (max-width: 653px) {
@@ -200,7 +273,12 @@
       height: 43px;
       width: 50px;
   }
-      } */
-      /* body{
-        background: url("../images/bck.jpg");
-      } */
+  #learningButton{
+    height: 43px;
+    width: 50px;
+  }
+      }
+
+        
+      
+      

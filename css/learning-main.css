@@ -1,80 +1,106 @@
-.quiz, .learning{
-  height: 200px;
-  width: 250px;
-  border-radius: 25px;
-  border: none;
-  position: relative;
-  left: 50%;
-  top: 50%;
+body{   
+  /* background-image: url('../images/whitespace.jpg'); */
+  background: url('../images/whitespace.jpg') repeat-y;
+  background-size:100%;
 }
-#quizNum1{
-
-  background: url('../images/quiz-aeroplane-resize.png');
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
-
-
- 
+body::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
 }
-#quizNum2{
 
-  background: url('../images/quiz-brush-resize.png');
+
+ #name-banner{
+    width: 100%;
+  }
+
+#homeButton{
+    position: absolute ;
+    right: 0%;
+    top: 0%;
+    height: 90px;
+    width: 100px;
+    background-image: url("../images/home-icon-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;  
+    border: none;
+    margin: 10px 10px 0px 0px;
+  
+  }
     
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
+/* On all vertically oriented types of screens */
+@media( min-width: 375px) {
+
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 15%;
+      left: 25%;
+  }
+
+}
+@media only screen
+{
+  #homeButton{
+      height: 90px;
+      width: 100px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 35%;
+  }    
+}
+
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px)
+{
+ #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 25%;
+  }
+}
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 35%;
+  }
   
 }
+@media only screen and (max-width: 768px) {
 
-#quizNum3{
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
 
-  background: url('../images/quiz-icecream-resize.png');
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
+      position: fixed;
+      top: 25%;
+      left: 25%;
+  }
 }
 
-#learnModule1{
-
-  background: url('../images/quiz-aeroplane-resize.png');
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
-}
-#learnModule2{
-
-  background: url('../images/quiz-brush-resize.png');
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
-}
-
-#learnModule3{
-
-  background: url('../images/quiz-icecream-resize.png');
-  background-repeat: no-repeat;
-  background-size:80%;
-  background-position: center;
-  float: left;
-  margin: 0px 50px 0px 0px;
-}
-
-.main-div{
-
-    position: fixed;
-    left: 5%;
-    top: 25%;
-    margin-top: 40px;
-}
-  

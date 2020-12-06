@@ -18,13 +18,13 @@ function playAudio(n){
     //   learn_audio.src="../audio/Gangnam Style -.mp3";
     //   break;
     case 1:
-      learn_audio.src ="../audio/quack-edited.mp3";
+      learn_audio.src ="../../../audio/quack-edited.mp3";
       break;
     case 2:
-      learn_audio.src ="../audio/baa-edited.mp3";
+      learn_audio.src ="../../../audio/baa-edited.mp3";
       break;
     case 3:
-      learn_audio.src ="../audio/wal-edited.mp3";
+      learn_audio.src ="../../../audio/wal-edited.mp3";
       break;  
 
     

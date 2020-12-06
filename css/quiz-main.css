@@ -23,7 +23,7 @@ body::before {
     background-repeat: no-repeat;
     background-size:100%;
     background-position: center;
-    float: left;
+    /* float: left; */
  
   }
   #quizNum2{
@@ -33,7 +33,7 @@ body::before {
     background-repeat: no-repeat;
     background-size:100%;
     background-position: center;
-    float: left;
+    /* float: left; */
   }
   
   #quizNum3{
@@ -42,7 +42,7 @@ body::before {
     background-repeat: no-repeat;
     background-size:100%;
     background-position: center;
-    float: left;
+    /* float: left; */
   }
   
 

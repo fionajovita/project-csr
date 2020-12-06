@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-<!-- <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    
-    <link rel="icon" href="images/icon-1.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" >
-      function preventBack(){window.history.forward();}
-       setTimeout("preventBack()", 0);
-       window.onunload=function(){null};
-   </script>
-    <script src="index.js"></script>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="icon" href="images/icon-1.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+  <script src="index.js"></script>
 </head>
 <title> Paheli Goonj</title>
+
 <body>
-<!-- </div>
+  <!-- </div>
     <div id="main-container" class="container-fluid container justify-content-center align-items-center">
     <img src="images/homepage.png" id="background-img">
     <div id="quizButton-div">
@@ -32,81 +34,82 @@
     </div>
 </div> -->
 
-<div id="main-container" class="container-fluid container justify-content-center align-items-center">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-12 text-center position-relative">
-      <img src="images/homepage.png" id="background-img" class="img-fluid">
-      <div id="quizButton-div">
-        <button id="quizButton" onclick="location.href = '/quiz.html';">
-          <span class="arrow2">>></span><span>&nbsp;&nbsp;&nbsp;&nbsp;Quiz</span>
-        </button>
-      </div>
-      <div id="learnButton-div">
-        <button id="learnButton" onclick="location.href = '/learning.html';"><span>Learn</span> <span
-            class="arrow1">&lt;&lt;</span></button>
+  <div id="main-container" class="container-fluid container justify-content-center align-items-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-12 text-center position-relative">
+        <img src="images/homepage.png" id="background-img" class="img-fluid">
+        <div id="quizButton-div">
+          <button id="quizButton" onclick="location.href = 'pages/quiz/quiz.html';">
+            <span class="arrow2">>></span><span>&nbsp;&nbsp;&nbsp;&nbsp;Quiz</span>
+          </button>
+        </div>
+        <div id="learnButton-div">
+          <button id="learnButton" onclick="location.href = 'pages/learning/learning.html';"><span>Learn</span> <span
+              class="arrow1">&lt;&lt;</span></button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <script>
+  <script>
 
-        var modal = document.getElementById("myModal");
-        
-        
-        var span = document.getElementsByClassName("close")[0];
-        
-        var main_content = document.getElementById("name");
-        
-        span.onclick = function() {
-          modal.style.display = "none";
+    var modal = document.getElementById("myModal");
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+    var main_content = document.getElementById("name");
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
+    function handleForm() {
+      var name = document.getElementById("name").value;
+      document.cookie = "name=" + name + "; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
+      window.location.href = "/index.html";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
         }
-        
-        
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
         }
-        
-        
-            function handleForm(){
-                var name = document.getElementById("name").value;
-                document.cookie = "name=" + name +"; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
-                window.location.href = "/index.html";
-            }
-        
-            function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
-                for(var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                    }
-                }
-                return "";
-            }
-        
-                var name = getCookie("name");
-                if (name != "") {
-                    
-                    document.getElementById('student-name').textContent = "Hello, " + name;
-                    modal.style.display = "none";
-                   
-                }
-                else{
-                    document.getElementById('student-name').textContent = "Hello, Firend";
-                    modal.style.display = "block";
-                }
-        
-    
-    
-              
-        </script>
+      }
+      return "";
+    }
+
+    var name = getCookie("name");
+    if (name != "") {
+
+      document.getElementById('student-name').textContent = "Hello, " + name;
+      modal.style.display = "none";
+
+    }
+    else {
+      document.getElementById('student-name').textContent = "Hello, Firend";
+      modal.style.display = "block";
+    }
+
+
+
+
+  </script>
 </body>
+
 </html>

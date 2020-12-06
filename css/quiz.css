@@ -1,10 +1,14 @@
 #progressBar{
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 50%;
-    left: 50%;
-    margin-top: 20px;
-    margin-left: -100px;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* left: 50%; */
+    /* margin-top: 20px; */
+    /* margin-left: -100px; */
     
 }
 
@@ -73,8 +77,8 @@ audio{
 {
     .question-div{
 
-        position: relative;
-        left: 30%;
+        /* position: relative; */
+        /* left: 30%; */
     }
     #title{
         position: relative;
@@ -87,7 +91,8 @@ audio{
         padding: 10px;
     }
     audio{
-        margin-left: 150px;
+        /* margin-left: 150px; */
+        margin: 15px auto;
     }
     
     #intmd-img{
@@ -115,17 +120,17 @@ audio{
     .question-div{
 
         /* overflow: hidden; */
-        position: fixed;
-        left: 10%;
-        top: 25%;
-        margin-top: 40px;
+        /* position: fixed; */
+        /* left: 10%; */
+        /* top: 25%; */
+        /* margin-top: 40px; */
     }
     audio{
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
     #title{
-        width: 50%;
-        margin-left: 100px;
+        /* width: 50%; */
+        /* margin-left: 100px; */
     }
     tr, td{
         margin-left: 35px;

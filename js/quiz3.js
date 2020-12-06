@@ -71,10 +71,10 @@ function updateScore(questionNumber, answer){
         q1m.pause();
         if(answer == "op2"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
         
@@ -86,10 +86,10 @@ function updateScore(questionNumber, answer){
         q2m.pause();
         if(answer == "op1"){
             score+=1;              
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
         
@@ -102,10 +102,10 @@ function updateScore(questionNumber, answer){
         q3m.pause();    
         if(answer == "op3"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
 
@@ -119,10 +119,10 @@ function updateScore(questionNumber, answer){
         q4m.pause();    
         if(answer == "op4"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
         intmd.style.display ="block";
@@ -135,10 +135,10 @@ function updateScore(questionNumber, answer){
         q5m.pause();    
         if(answer == "op3"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
         intmd.style.display ="block";
@@ -152,10 +152,10 @@ function updateScore(questionNumber, answer){
         progressbar.style.display = "none";
         if(answer == "op2"){
             score+=1;               
-            intmd_img.src="../images/right-answer.png";
+            intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
         }else{
-            intmd_img.src="../images/wrong-answer.png";
+            intmd_img.src="../../../images/wrong-answer.png";
             play_again.style.display = "block";
         }
         // await new Promise(r => setTimeout(r, 7000));
@@ -168,9 +168,9 @@ function updateScore(questionNumber, answer){
 function showScore(score){
     intmd.style.display ="block";
     if(score ==6){
-        intmd_img.src = "../images/topscore.png";
+        intmd_img.src = "../../../images/topscore.png";
     }else{
-        intmd_img.src = "../images/tryAgain.png";
+        intmd_img.src = "../../../images/tryAgain.png";
     }
 }
 

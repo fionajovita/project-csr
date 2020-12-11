@@ -53,7 +53,7 @@ body::before {
     width: 100%;
   }
 
-#homeButton{
+/* #homeButton{
     position: absolute ;
     right: 0%;
     top: 0%;
@@ -64,17 +64,17 @@ body::before {
     background-size: 100%;
     cursor: pointer;  
     border: none;
-    margin: 10px 10px 0px 0px;
+    margin: 0 0 0px 0px;
   
-  }
+  } */
     
 /* On all vertically oriented types of screens */
 @media( min-width: 375px) {
 
-    #homeButton{
+    /* #homeButton{
         height: 50px;
         width: 50px;
-    }
+    } */
     .main-div{
   
         position: fixed;
@@ -87,10 +87,10 @@ body::before {
   }
 @media only screen
 {
-    #homeButton{
+    /* #homeButton{
         height: 90px;
         width: 100px;
-    }
+    } */
     .main-div{
   
         position: fixed;
@@ -102,10 +102,10 @@ body::before {
 /* On screens with a maximum window width of 1280px */
 @media screen and (max-width: 1280px)
 {
-   #homeButton{
+   /* #homeButton{
         height: 50px;
         width: 50px;
-    }
+    } */
     .main-div{
   
         position: fixed;
@@ -116,10 +116,10 @@ body::before {
 /* On all screen types with a window width of between 1024px and 1280px */
 @media all and (min-width: 1024px) and (max-width: 1280px)
 {
-    #homeButton{
+    /* #homeButton{
         height: 50px;
         width: 50px;
-    }
+    } */
     .main-div{
   
         position: fixed;
@@ -130,10 +130,10 @@ body::before {
 }
 @media only screen and (max-width: 768px) {
 
-    #homeButton{
+    /* #homeButton{
         height: 50px;
         width: 50px;
-    }
+    } */
     .main-div{
   
         position: fixed;

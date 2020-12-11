@@ -94,20 +94,35 @@
 
 <body>
 
+    <div class="container-fluid">
+        <div class="row" style="background-image: url('../../images/header-back.png');min-height: 78px;">
+            <div class="col-sm-4 d-flex align-items-center justify-content-start"><a class="d-block text-right"
+                    style="margin: 10px 0; cursor: pointer;" onclick="location.href = '/pages/quiz/quiz.html';"><img
+                        style="width: 100px;" class="img-fluid" src="../../images/back.png" /></a></div>
+            <div class="col-sm-4 text-center d-flex align-items-center justify-content-center"><img
+                    style="margin: 10px 0;width: 70%;" class="img-fluid" src="../../images/logo.png" /></div>
+            <!-- <img id="name-banner" src="../../images/Goonj-title.png" /> -->
+            <div class="col-sm-4 text-right d-flex align-items-center justify-content-end"><a class="d-block text-right"
+                    style="margin: 10px 0;cursor: pointer;" onclick="location.href = '/';"><img style="width: 100px;" class="img-fluid"
+                        src="../../images/home-icon-1.png" /></a></div>
+        </div>
+    </div>
 
-
-    <div><img id="name-banner" src="../../images/Goonj-title.png" /></div>
+    <!-- <div style="background: #82b373;height: 50px;"><img id="name-banner" src="../../images/Goonj-title.png" /></div> -->
     <!-- <button id="playButton" onclick="readyToPlay();" >Read to Play?</button> -->
 
-    <div id="homeButton-div">
+    <!-- <div id="homeButton-div">
         <a id="homeButton" onclick="location.href = '/';"></a>
     </div>
     <div id="quizButton-div">
         <button id="quizButton" onclick="location.href = '/pages/quiz/quiz.html';"></button>
-    </div>
+    </div> -->
 
-    <div class="container" style="overflow: hidden;position: relative; height: calc(100vh - 145px);">
-        <progress value="0" max="5" id="progressBar"></progress>
+    <div class="container" style="overflow: hidden;position: relative;">
+        <!-- <progress value="0" max="5" id="progressBar"></progress> -->
+        <div class="d-flex align-items-center justify-content-center mt-5" >
+            <progress value="0" max="5" id="progressBar"></progress>
+        </div>
 
         <div class="d-flex align-items-center justify-content-center h-100">
 
@@ -118,15 +133,15 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q1op1"
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q1op1"
                                 onclick="updateScore('q1','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q1op2"
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q1op2"
                                 onclick="updateScore('q1','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q1op3"
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q1op3"
                                 onclick="updateScore('q1','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q1op4"
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q1op4"
                                 onclick="updateScore('q1','op4');"></button></div>
                     </div>
                 </div>
@@ -138,12 +153,12 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q2op1" onclick="updateScore('q2','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q2op2" onclick="updateScore('q2','op2');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q2op1" onclick="updateScore('q2','op1');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q2op2" onclick="updateScore('q2','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q2op3" onclick="updateScore('q2','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q2op4" onclick="updateScore('q2','op4');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q2op3" onclick="updateScore('q2','op3');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q2op4" onclick="updateScore('q2','op4');"></button></div>
                     </div>
                 </div>
             </div>
@@ -154,12 +169,12 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q3op1" onclick="updateScore('q3','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q3op2" onclick="updateScore('q3','op2');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q3op1" onclick="updateScore('q3','op1');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q3op2" onclick="updateScore('q3','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q3op3" onclick="updateScore('q3','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q3op4" onclick="updateScore('q3','op4');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q3op3" onclick="updateScore('q3','op3');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q3op4" onclick="updateScore('q3','op4');"></button></div>
                     </div>
                 </div>
             </div>
@@ -170,12 +185,12 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q4op1" onclick="updateScore('q4','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q4op2" onclick="updateScore('q4','op2');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q4op1" onclick="updateScore('q4','op1');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q4op2" onclick="updateScore('q4','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q4op3" onclick="updateScore('q4','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q4op4" onclick="updateScore('q4','op4');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q4op3" onclick="updateScore('q4','op3');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q4op4" onclick="updateScore('q4','op4');"></button></div>
                     </div>
                 </div>
             </div>
@@ -187,12 +202,12 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q5op1" onclick="updateScore('q5','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q5op2" onclick="updateScore('q5','op2');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q5op1" onclick="updateScore('q5','op1');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q5op2" onclick="updateScore('q5','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q5op3" onclick="updateScore('q5','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q5op4" onclick="updateScore('q5','op4');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q5op3" onclick="updateScore('q5','op3');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q5op4" onclick="updateScore('q5','op4');"></button></div>
                     </div>
                 </div>
             </div>
@@ -204,12 +219,12 @@
                 <div class="text-center">
                     <img class="mt-4 mb-4 img-fluid" src="../../images/title.png" />
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q6op1" onclick="updateScore('q6','op1');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q6op2" onclick="updateScore('q6','op2');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q6op1" onclick="updateScore('q6','op1');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q6op2" onclick="updateScore('q6','op2');"></button></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q6op3" onclick="updateScore('q6','op3');"></button></div>
-                        <div class="col-sm-12 col-md-6"><button class="quest" id="q6op4" onclick="updateScore('q6','op4');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q6op3" onclick="updateScore('q6','op3');"></button></div>
+                        <div class="col-sm-6 col-md-6"><button class="quest" id="q6op4" onclick="updateScore('q6','op4');"></button></div>
                     </div>
                 </div>
             </div>

@@ -68,20 +68,33 @@
 </head>
 
 <body>
-    <div><img id="name-banner" src="../../images/Goonj-title.png" /></div>
-    <div id="homeButton-div">
-        <a id="homeButton" onclick="location.href = '/';"></a>
+    <div class="container-fluid">
+        <div class="row" style="background-image: url('../../images/header-back.png');min-height: 78px;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center d-flex align-items-center justify-content-center"><img style="margin: 10px 0;width: 70%" class="img-fluid" src="../../images/logo.png" /></div>
+            <!-- <img id="name-banner" src="../../images/Goonj-title.png" /> -->
+            <div class="col-sm-4 text-right d-flex align-items-center justify-content-end"><a id="homeButton" class="d-block text-right" style="margin: 10px 0;cursor: pointer;" onclick="location.href = '/';"><img style="width: 100px;" class="img-fluid" src="../../images/home-icon-1.png" /></a></div>
+        </div>
     </div>
+    <!-- <div id="homeButton-div">
+        
+    </div> -->
     <div class="container">
+
+
+
         <div class="row align-items-center justify-content-center">
-            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum1" onclick="checkIfModuleCompleted(1);"></button></div>
-            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum2" onclick="checkIfModuleCompleted(2);"></button></div>
-            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum3" onclick="checkIfModuleCompleted(3);"></button></div>
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum1"
+                    onclick="checkIfModuleCompleted(1);"></button></div>
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum2"
+                    onclick="checkIfModuleCompleted(2);"></button></div>
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="quiz" id="quizNum3"
+                    onclick="checkIfModuleCompleted(3);"></button></div>
         </div>
 
-        
-        
-        
+
+
+
 
     </div>
 </body>

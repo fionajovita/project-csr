@@ -66,10 +66,21 @@
 </head>
 
 <body>
-    <div><img id="name-banner" src="../../images/Goonj-title.png" /></div>
-    <div id="homeButton-div">
-        <a id="homeButton" onclick="location.href = '/';"></a>
+
+
+    <div class="container-fluid">
+        <div class="row" style="background-image: url('../../images/header-back.png');min-height: 78px;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center d-flex align-items-center justify-content-center"><img style="margin: 10px 0;width: 70%" class="img-fluid" src="../../images/logo.png" /></div>
+            <!-- <img id="name-banner" src="../../images/Goonj-title.png" /> -->
+            <div class="col-sm-4 text-right d-flex align-items-center justify-content-end"><a class="d-block text-right" style="margin: 10px 0;cursor: pointer;" onclick="location.href = '/';"><img style="width: 100px;" class="img-fluid" src="../../images/home-icon-1.png" /></a></div>
+        </div>
     </div>
+
+    <!-- <div style="background: #82b373;height: 50px;"><img id="name-banner" src="../../images/Goonj-title.png" /></div> -->
+    <!-- <div id="homeButton-div">
+        <a id="homeButton" onclick="location.href = '/';"></a>
+    </div> -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center"><button class="learning" id="learnModule1" onclick="writeCookie('module1');"></button></div>

@@ -132,18 +132,55 @@ body {font-family: Arial, Helvetica, sans-serif;}
   transition: 0.5s;
 }
 
+#loginButton,#registerButton{
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #7280BC;
+  font-weight: bold;
+  text-shadow: 1px 1px #7280BC;
+  color: #ffffff;
+  border-radius: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #7280BC;
+  cursor: pointer;
 
-/* 
-body{
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 120px;
+  margin-left: -140px; */
+  
 
-  background: url('../images/bck.jpg');
+}
 
-} */
+
+
+#quizButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#loginButton-div{
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: 30%;
+}
+#registerButton-div{
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  left: 55%;
+}
 
 #learnButton-div{
     overflow: hidden;
     position: absolute;
-    top: 64%;
+    top: 69%;
     transform: translateY(-50%);
     left: 37%;
 }
@@ -152,6 +189,7 @@ body{
   animation: slide1 1s ease-in-out infinite;
   margin-left: 9px;
 }
+
 .arrow2{
   animation: slide2 1s ease-in-out infinite;
   margin-left: 9px;

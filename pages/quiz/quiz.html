@@ -28,38 +28,40 @@
         }
         function checkIfModuleCompleted(moduleName) {
             if (moduleName == "1") {
-                var name1 = document.cookie.match('(^|;) ?' + "module1" + '=([^;]*)(;|$)');
-                var name2 = document.cookie.match('(^|;) ?' + "module2" + '=([^;]*)(;|$)');
-                if (name1 && name2) {
-                    window.location.href = "/pages/quiz/quiz1.html";
+                var name1 = document.cookie.match('(^|;) ?' + "link" + '=([^;]*)(;|$)');
+                
+                if (name1) {
+                    window.location.href = "/pages/quiz/link-sounds.html";
                 }
                 else {
-                    alert('You have not completed the Learning Module! Please Come back once you have completed Long Sounds and Intermittent Sounds')
+                    alert('You have not completed the Learning Module! Please Come back once you have completed Link Sounds - Level 1')
                     window.location.href = "/pages/learning/learning.html";
                 }
             }
             else if (moduleName == "2") {
-                var name1 = document.cookie.match('(^|;) ?' + "module1" + '=([^;]*)(;|$)');
-                var name2 = document.cookie.match('(^|;) ?' + "module3" + '=([^;]*)(;|$)');
-
-                if (name1 && name2) {
-                    window.location.href = "/pages/quiz/quiz2.html";
-                }
-                else {
-                    alert('You have not completed the Learning Module! Please Come back once you have completed Long Sounds and Short Sounds')
-                    window.location.href = "/pages/learning/learning.html";
-                }
-            }
-            else if (moduleName == "3") {
-                var name1 = document.cookie.match('(^|;) ?' + "module1" + '=([^;]*)(;|$)');
-                var name2 = document.cookie.match('(^|;) ?' + "module2" + '=([^;]*)(;|$)');
-                var name3 = document.cookie.match('(^|;) ?' + "module3" + '=([^;]*)(;|$)');
-
+                var name1 = document.cookie.match('(^|;) ?' + "short" + '=([^;]*)(;|$)');
+                var name2 = document.cookie.match('(^|;) ?' + "long" + '=([^;]*)(;|$)');
+                var name3 = document.cookie.match('(^|;) ?' + "intermittent" + '=([^;]*)(;|$)');
                 if (name1 && name2 && name3) {
                     window.location.href = "/pages/quiz/quiz3.html";
                 }
                 else {
-                    alert('You have not completed the Learning Module! Please Come back once you have completed all 3 modules')
+                    alert('You have not completed the Learning Module! Please Come back once you have completed Long, Intermittent and Short Sounds')
+                    window.location.href = "/pages/learning/learning.html";
+                }
+            }
+            else if (moduleName == "3") {
+                var name1 = document.cookie.match('(^|;) ?' + "fruits" + '=([^;]*)(;|$)');
+                
+                var name2 = document.cookie.match('(^|;) ?' + "animals" + '=([^;]*)(;|$)');
+
+                var name3 = document.cookie.match('(^|;) ?' + "vehicles" + '=([^;]*)(;|$)');
+
+                if (name1 && name2 && name3) {
+                    window.location.href = "/pages/quiz/advanced.html";
+                }
+                else {
+                    alert('You have not completed the Learning Module! Please Come back once you have completed the Advanced module')
                     window.location.href = "/pages/learning/learning.html";
                 }
             }

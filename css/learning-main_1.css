@@ -1,0 +1,106 @@
+body{   
+  /* background-image: url('../images/whitespace.jpg'); */
+  background: url('../images/whitespace.jpg') repeat-y;
+  background-size:100%;
+}
+body::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+}
+
+
+ #name-banner{
+    width: 100%;
+  }
+
+#homeButton{
+    position: absolute ;
+    right: 0%;
+    top: 0%;
+    height: 90px;
+    width: 100px;
+    background-image: url("../images/home-icon-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;  
+    border: none;
+    margin: 10px 10px 0px 0px;
+  
+  }
+    
+/* On all vertically oriented types of screens */
+@media( min-width: 375px) {
+
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 15%;
+      left: 25%;
+  }
+
+}
+@media only screen
+{
+  #homeButton{
+      height: 90px;
+      width: 100px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 35%;
+  }    
+}
+
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px)
+{
+ #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 25%;
+  }
+}
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 35%;
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+
+  #homeButton{
+      height: 50px;
+      width: 50px;
+  }
+  .main-div{
+
+      position: fixed;
+      top: 25%;
+      left: 25%;
+  }
+}
+

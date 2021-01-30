@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="icon" href="../../images/icon-1.png" type="image/png">
+    <title>Paheli Goonj</title>
+    <link rel="stylesheet" href="../../css/learning-levels.css" />
+    <style>
+                #learnModule1 {
+
+background: url('../../images/fruits.png');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+/* float: left; */
+}
+
+
+#learnModule2 {
+
+background: url('../../images/animals.png');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+/* float: left; */
+}
+
+#learnModule3 {
+
+background: url('../../images/vehicles.png');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+/* float: left; */
+}
+
+
+    </style>
+    <script>
+        function writeCookie(moduleValue) {
+            var cookie = moduleValue;
+            document.cookie = cookie + "=" + cookie + "; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
+            if (moduleValue == "fruits")
+                window.location.href = "/pages/learning/fruits.html";
+            else if (moduleValue == "animals")
+                window.location.href = "/pages/learning/animals.html";
+            else if (moduleValue == "vehicles")
+                window.location.href = "/pages/learning/vehicles.html";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="background-image: url('../../images/header-back.png');min-height: 78px;">
+            <div class="col-sm-4 d-flex align-items-center justify-content-start"><a class="d-block text-right"
+                style="margin: 10px 0;cursor: pointer;" onclick="location.href = '/pages/learning/learning.html';">
+                <img
+                  style="width: 100px;" class="img-fluid" src="../../images/back.png" /></a></div>
+            <div class="col-sm-4 text-center d-flex align-items-center justify-content-center">
+                
+                <img style="margin: 10px 0;width: 70%" class="img-fluid" src="../../images/logo.png" /></div>
+            <div class="col-sm-4 text-right d-flex align-items-center justify-content-end"><a class="d-block text-right" style="margin: 10px 0;cursor: pointer;" onclick="location.href = '/';"><img style="width: 100px;" class="img-fluid" src="../../images/home-icon-1.png" /></a></div>
+        </div>
+    </div>
+
+    <!-- <div id="homeButton-div">
+        
+    </div> -->
+    <div class="container">
+
+
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="learn" id="learnModule1"
+                onclick="writeCookie('fruits');"></button></div>
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="learn" id="learnModule2"
+                onclick="writeCookie('animals');"></button></div>
+            <div class="col-sm-12 col-md-12 col-xl-4 text-center"><button class="learn" id="learnModule3"
+                onclick="writeCookie('vehicles');"></button></div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

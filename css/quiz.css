@@ -27,13 +27,13 @@ audio{
 
 #intmd-img{
     
-    max-width:500px;
+    /* max-width:500px;
     max-height:750px;   
     overflow: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
-    
+     */
     /* margin-top: -250px;
     margin-left: -250px; */
       
@@ -72,14 +72,14 @@ audio{
     /* height: 65px; */
     /* top: 20%;
     left: 37%; */
-    position: fixed;
+    /* position: fixed;
     left: 50%;
-    top: 70%;
+    top: 70%; */
 }
 #btn2{
-    position: fixed;
+    /* position: fixed;
     left: 50%;
-    top: 75%;
+    top: 75%; */
     /* height: 65px; */
     /* position: fixed; */
     
@@ -125,7 +125,7 @@ audio{
         margin: 15px auto;
     }
     
-    #intmd-img{
+    /* #intmd-img{
     
     max-width:500px;
     max-height:750px;   
@@ -140,7 +140,7 @@ audio{
     /* #progressBar{
         margin-top: 80px;
         
-    } */
+    } */ 
     
 }
 

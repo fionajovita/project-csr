@@ -1,6 +1,7 @@
 var slideIndex = 1;
 
 var learn_audio = document.querySelector("#learning-audio");
+var nextModuleBtn = document.getElementById("nextModuleBtn");
 
 // Next/previous controls
 function plusSlides(n) {
@@ -29,7 +30,11 @@ function playAudio(n){
 
     
   }
-  
+  if(n==3){
+    nextModuleBtn.style.display = "block";
+  }else{
+    nextModuleBtn.style.display = "none";
+  }
   learn_audio.play();
 }
 

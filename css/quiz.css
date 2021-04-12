@@ -65,27 +65,15 @@ audio{
     box-shadow: 1cm;
     margin: 15px;
 }
+.btn-cust{
+    margin: 10px 15px 0px 0px;
+    /* margin: 10px; */
+    border-radius: 10px;
+    border: none;
+    background-color: white;
 
-#btn1{
-    
-    /* position: fixed; */
-    /* height: 65px; */
-    /* top: 20%;
-    left: 37%; */
-    /* position: fixed;
-    left: 50%;
-    top: 70%; */
 }
-#btn2{
-    /* position: fixed;
-    left: 50%;
-    top: 75%; */
-    /* height: 65px; */
-    /* position: fixed; */
-    
-    /* top: 20%; */
-    /* left: 55%; */
-}
+
 #quizButton{
     position: absolute ;
     /* left: 0%; */

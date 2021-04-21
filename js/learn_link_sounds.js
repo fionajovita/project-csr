@@ -20,7 +20,7 @@ function playAudio(n){
       learn_audio.style.display = "none";
       break;
     case 2:
-      learn_audio.src ="../../../audio/a.mp3";
+      learn_audio.src ="../../../audio/a.mp4";
       break;
     case 3:
       learn_audio.src ="../../../audio/sh.mp3";

@@ -148,14 +148,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 #helpButton {
   font-size: 18px !important;
-  background-color: #7280BC;
+  background-color: white;
   font-weight: bold;
-  text-shadow: 1px 1px #7280BC;
+  /* text-shadow: 1px 1px #7280BC; */
   color: #ffffff;
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border: 1px solid #7280BC;
+  border-color: white;
+   border-radius: 20px;
+  /* -moz-border-radius: 10px; */
+  /* -webkit-border-radius: 10px; */ 
+  /* border: 1px solid #7280BC; */
   cursor: pointer;
 
   /* position: fixed;
@@ -170,15 +171,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   /* float:left;  */
   position:absolute;
   top: 29%;
-  transform: translateY(-50%);
-  left:77%
+  transform: translateY(-75%);
+  left:73%
 }
 
 #helpButton{
   cursor: pointer;
   display: inline-block;
   position: relative;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	transform: scale(1);
 	animation: pulse 2s infinite;
 }

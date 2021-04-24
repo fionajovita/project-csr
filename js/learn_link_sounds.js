@@ -3,6 +3,9 @@ var slideIndex = 1;
 var learn_audio = document.querySelector("#learning-audio");
 var nextModuleBtn = document.getElementById("nextModuleBtn");
 
+window.addEventListener('error', function(e) {
+  console.log(e);
+}, true);
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -20,10 +23,12 @@ function playAudio(n){
       learn_audio.style.display = "none";
       break;
     case 2:
-      learn_audio.src ="../../../audio/a.wav";
+      learn_audio.src ="../../../audio/a.mp3";
+      
       break;
     case 3:
-      learn_audio.src ="../../../audio/sh.ogg";
+      learn_audio.src ="../../../audio/sh.mp3";
+    
       break;
     case 4:
       learn_audio.src ="../../../audio/ee.mp3";

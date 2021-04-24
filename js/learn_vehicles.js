@@ -16,19 +16,19 @@ function currentSlide(n) {
 function playAudio(n) {
   switch (n) {
     case 1:
-      learn_audio.src = "../../../audio/cycle.mp3";
+      learn_audio.src = "../../../audio/cycle.ogg";
       break;
     case 2:
-      learn_audio.src = "../../../audio/aeroplane.mp3";
+      learn_audio.src = "../../../audio/aeroplane.ogg";
       break;
     case 3:
-      learn_audio.src = "../../../audio/bike.mp3";
+      learn_audio.src = "../../../audio/bike.ogg";
       break;
     case 4:
-      learn_audio.src = "../../../audio/auto.mp3";
+      learn_audio.src = "../../../audio/auto.ogg";
       break;
     case 5:
-      learn_audio.src = "../../../audio/ambulance.mp3";
+      learn_audio.src = "../../../audio/ambulance.ogg";
       break;
   }
   if(n==5){

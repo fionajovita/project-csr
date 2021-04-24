@@ -16,31 +16,31 @@ function currentSlide(n) {
 function playAudio(n) {
   switch (n) {
     // case 1:
-    //   learn_audio.src="../audio/Gangnam Style -.mp3";
+    //   learn_audio.src="../audio/Gangnam Style -.ogg";
     //   break;
     case 1:
-      learn_audio.src = "../../../audio/dog.mp3";
+      learn_audio.src = "../../../audio/dog.ogg";
       break;
     case 2:
-      learn_audio.src = "../../../audio/cow.mp3";
+      learn_audio.src = "../../../audio/cow.ogg";
       break;
     case 3:
-      learn_audio.src = "../../../audio/rabbit.mp3";
+      learn_audio.src = "../../../audio/rabbit.ogg";
       break;
     case 4:
-      learn_audio.src = "../../../audio/camel.mp3";
+      learn_audio.src = "../../../audio/camel.ogg";
       break;
     case 5:
-      learn_audio.src = "../../../audio/monkey.mp3";
+      learn_audio.src = "../../../audio/monkey.ogg";
       break;
     case 6:
-      learn_audio.src = "../../../audio/buffalo.mp3";
+      learn_audio.src = "../../../audio/buffalo.ogg";
       break;
     case 7:
-      learn_audio.src = "../../../audio/elephant.mp3";
+      learn_audio.src = "../../../audio/elephant.ogg";
       break;
     case 8:
-      learn_audio.src = "../../../audio/chimpanzee.mp3";
+      learn_audio.src = "../../../audio/chimpanzee.ogg";
       break;
   }
   if(n==8){

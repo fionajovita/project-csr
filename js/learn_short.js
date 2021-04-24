@@ -16,16 +16,16 @@ function currentSlide(n) {
 function playAudio(n){
   switch(n){
     case 1:
-      learn_audio.src ="../../../audio/sit.mp3";
+      learn_audio.src ="../../../audio/sit.ogg";
       break;
     case 2:
-      learn_audio.src ="../../../audio/fish.mp3";
+      learn_audio.src ="../../../audio/fish.ogg";
       break;
     case 3:
-      learn_audio.src ="../../../audio/up.mp3";
+      learn_audio.src ="../../../audio/up.ogg";
       break;  
     case 4:
-      learn_audio.src ="../../../audio/go.mp3";
+      learn_audio.src ="../../../audio/go.ogg";
       break;
     
   }

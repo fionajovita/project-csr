@@ -16,16 +16,16 @@ function currentSlide(n) {
 function playAudio(n){
   switch(n){
     // case 1:
-    //   learn_audio.src="../audio/Gangnam Style -.mp3";
+    //   learn_audio.src="../audio/Gangnam Style -.ogg";
     //   break;
     case 1:
-      learn_audio.src ="../../../audio/quack-edited.mp3";
+      learn_audio.src ="../../../audio/quack-edited.ogg";
       break;
     case 2:
-      learn_audio.src ="../../../audio/baa-edited.mp3";
+      learn_audio.src ="../../../audio/baa-edited.ogg";
       break;
     case 3:
-      learn_audio.src ="../../../audio/wal-edited.mp3";
+      learn_audio.src ="../../../audio/wal-edited.ogg";
       break;  
 
     

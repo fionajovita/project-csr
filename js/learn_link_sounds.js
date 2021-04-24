@@ -23,24 +23,24 @@ function playAudio(n){
       learn_audio.style.display = "none";
       break;
     case 2:
-      learn_audio.src ="../../../audio/a.mp3";
+      learn_audio.src ="../../../audio/a.ogg";
       
       break;
     case 3:
-      learn_audio.src ="../../../audio/sh.mp3";
+      learn_audio.src ="../../../audio/sh.ogg";
     
       break;
     case 4:
-      learn_audio.src ="../../../audio/ee.mp3";
+      learn_audio.src ="../../../audio/ee.ogg";
       break;  
     case 5:
-      learn_audio.src ="../../../audio/m.mp3";
+      learn_audio.src ="../../../audio/m.ogg";
       break;
     case 6:
-        learn_audio.src ="../../../audio/s.mp3";
+        learn_audio.src ="../../../audio/s.ogg";
         break;
     case 7:
-        learn_audio.src ="../../../audio/u.mp3";
+        learn_audio.src ="../../../audio/u.ogg";
         break;
   }
   if(n==6){

@@ -61,11 +61,16 @@ background-position: center;
                 window.location.href = "/pages/learning/short.html";
 
         }
+        function showModal(){
+            
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+            myModal.toggle()
+        }
 
     </script>
 </head>
 
-<body>
+<body onload="showModal();">
     <div class="container-fluid">
         <div class="row" style="background-image: url('../../images/header-back.png');min-height: 78px;">
             <div class="col-sm-4 d-flex align-items-center justify-content-start"><a class="d-block text-right"
@@ -96,9 +101,7 @@ background-position: center;
         </div>
 
 
-        <img src="gfg.png" 
-             data-toggle="modal" 
-             data-target="#exampleModal" />
+
   
         <div class="modal fade" 
              id="exampleModal"
@@ -113,7 +116,7 @@ background-position: center;
   
                     <!--Modal body with image-->
                     <div class="modal-body">
-                        <img class="img-responsive" src="../../images/Module2-Description.png"  style="max-height:250px;"/>
+                        <img class="img-responsive" src="../../images/Module2-Description.png"  style="max-height:300px;"/>
                     </div>
   
                     <div class="modal-footer">

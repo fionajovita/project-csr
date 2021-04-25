@@ -14,24 +14,41 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n) {
-  switch (n) {
-    // case 1:
-    //   learn_audio.src="../audio/Gangnam Style -.ogg";
-    //   break;
-    case 1:
-      learn_audio.src = "../../../audio/m.ogg";
-      break;
-    case 2:
-      learn_audio.src = "../../../audio/moo.ogg";
-      break;
-    case 3:
-      learn_audio.src = "../../../audio/boat.ogg";
-      break;
-    case 4:
-      learn_audio.src = "../../../audio/down.ogg";
-      break;
-
+  if((navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true ))
+  {
+    switch (n) {
+      case 1:
+        learn_audio.src = "../../../audio/m.mp3";
+        break;
+      case 2:
+        learn_audio.src = "../../../audio/moo.mp3";
+        break;
+      case 3:
+        learn_audio.src = "../../../audio/boat.mp3";
+        break;
+      case 4:
+        learn_audio.src = "../../../audio/down.mp3";
+        break;
+  
+    }
   }
+  else{
+    switch (n) {
+      case 1:
+        learn_audio.src = "../../../audio/m.ogg";
+        break;
+      case 2:
+        learn_audio.src = "../../../audio/moo.ogg";
+        break;
+      case 3:
+        learn_audio.src = "../../../audio/boat.ogg";
+        break;
+      case 4:
+        learn_audio.src = "../../../audio/down.ogg";
+        break;
+    }
+  }
+
   if(n==4){
     nextModuleBtn.style.display = "block";
   }else{

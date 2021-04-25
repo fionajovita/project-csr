@@ -70,15 +70,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #quizButton{
   padding: 10px 15px 11px 5px!important;
-  font-size: 18px !important;
+  font-size: 24px !important;
   background-color: #7280BC;
   font-weight: bold;
   text-shadow: 1px 1px #7280BC;
-  color: #ffffff;
+  color: white;
   border-radius: 10px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border: 1px solid #7280BC;
+  height: 65px;
+  /* border: none; */
   cursor: pointer;
 
   /* position: fixed;
@@ -93,12 +95,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
     position:absolute;
     top: 50%;
     transform: translateY(-50%);
-    left:56%
+    left:52%
 }
 
 #learnButton{
   padding: 10px 15px 11px !important;
-  font-size: 18px !important;
+  font-size: 24px !important;
   background-color: #7280BC;
   font-weight: bold;
   text-shadow: 1px 1px #7280BC;
@@ -108,7 +110,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   -webkit-border-radius: 5px;
   border: 1px solid #7280BC;
   cursor: pointer;
-
+  height: 65px;
   /* position: fixed;
   top: 50%;
   left: 50%;
@@ -169,6 +171,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 #helpButton-div{
   /* float:left;  */
+  border-radius: 20px;
   position:absolute;
   top: 29%;
   transform: translateY(-75%);
@@ -181,6 +184,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   position: relative;
   box-shadow: none;
   border: 0;
+  
+  border-radius: 20px;
 	transform: scale(1);
 	animation: pulse 2s infinite;
 }

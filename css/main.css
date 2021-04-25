@@ -161,11 +161,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   /* border: 1px solid #7280BC; */
   cursor: pointer;
 
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: 120px;
-  margin-left: -140px; */
+  display: inline-block;
+  position: relative;
+  box-shadow: none;
+  border: 0;
+  
+  border-radius: 80px;
+	transform: scale(1);
+	animation: pulse 2s infinite;
   
 
 }
@@ -178,18 +181,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   left:73%
 }
 
-#helpButton{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  box-shadow: none;
-  border: 0;
-  
-  border-radius: 20px;
-	transform: scale(1);
-	animation: pulse 2s infinite;
+#helpButton img{
+  border-radius: 80px;
 }
-
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);

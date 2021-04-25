@@ -43,7 +43,7 @@ function playAudio(n){
         learn_audio.src ="../../../audio/u.ogg";
         break;
   }
-  if(n==6){
+  if(n==7){
     nextModuleBtn.style.display = "block";
   }else{
     nextModuleBtn.style.display = "none";

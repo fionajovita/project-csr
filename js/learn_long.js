@@ -14,8 +14,25 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n) {
-  if((navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) )
+  if((navigator.userAgent.indexOf("Chrome") != -1))
   {
+    switch (n) {
+      case 1:
+        learn_audio.src = "../../../audio/m.ogg";
+        break;
+      case 2:
+        learn_audio.src = "../../../audio/moo.ogg";
+        break;
+      case 3:
+        learn_audio.src = "../../../audio/boat.ogg";
+        break;
+      case 4:
+        learn_audio.src = "../../../audio/down.ogg";
+        break;
+    }
+  }
+  else{
+
     switch (n) {
       case 1:
         learn_audio.src = "../../../audio/m.mp3";
@@ -30,22 +47,6 @@ function playAudio(n) {
         learn_audio.src = "../../../audio/down.mp3";
         break;
   
-    }
-  }
-  else{
-    switch (n) {
-      case 1:
-        learn_audio.src = "../../../audio/m.ogg";
-        break;
-      case 2:
-        learn_audio.src = "../../../audio/moo.ogg";
-        break;
-      case 3:
-        learn_audio.src = "../../../audio/boat.ogg";
-        break;
-      case 4:
-        learn_audio.src = "../../../audio/down.ogg";
-        break;
     }
   }
 

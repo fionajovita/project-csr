@@ -14,33 +14,8 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n) {
-  if((navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) )
+  if((navigator.userAgent.indexOf("Chrome") != -1))
   {
-    switch (n) {
-      case 1:
-        learn_audio.src = "../../../audio/pineapple.mp3";
-        break;
-      case 2:
-        learn_audio.src = "../../../audio/grapes.mp3";
-        break;
-      case 3:
-        learn_audio.src = "../../../audio/apple.mp3";
-        break;
-      case 4:
-        learn_audio.src = "../../../audio/orange.mp3";
-        break;
-      case 5:
-        learn_audio.src = "../../../audio/banana.mp3";
-        break;
-      case 6:
-        learn_audio.src = "../../../audio/mango.mp3";
-        break;
-      case 7:
-        learn_audio.src = "../../../audio/watermelon.mp3";
-        break;
-    }
-  }
-  else{
     switch (n) {
       case 1:
         learn_audio.src = "../../../audio/pineapple.ogg";
@@ -62,6 +37,32 @@ function playAudio(n) {
         break;
       case 7:
         learn_audio.src = "../../../audio/watermelon.ogg";
+        break;
+    }
+  }
+  else{
+    
+    switch (n) {
+      case 1:
+        learn_audio.src = "../../../audio/pineapple.mp3";
+        break;
+      case 2:
+        learn_audio.src = "../../../audio/grapes.mp3";
+        break;
+      case 3:
+        learn_audio.src = "../../../audio/apple.mp3";
+        break;
+      case 4:
+        learn_audio.src = "../../../audio/orange.mp3";
+        break;
+      case 5:
+        learn_audio.src = "../../../audio/banana.mp3";
+        break;
+      case 6:
+        learn_audio.src = "../../../audio/mango.mp3";
+        break;
+      case 7:
+        learn_audio.src = "../../../audio/watermelon.mp3";
         break;
     }
   }

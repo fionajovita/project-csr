@@ -16,7 +16,7 @@ function currentSlide(n) {
 }
 function playAudio(n){
   learn_audio.style.display = "block";
-  if((navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true ))
+  if((navigator.userAgent.indexOf("Safari") != -1) || (navigator.userAgent.indexOf("MSIE") != -1 ) )
   {
     switch(n){
       case 1:

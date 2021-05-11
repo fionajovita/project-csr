@@ -18,26 +18,26 @@ function playAudio(n){
   {
     switch(n){
       case 1:
-        learn_audio.src ="../../../audio/quack-edited.ogg";
+        learn_audio.src ="../../../audio/quack.ogg";
         break;
       case 2:
-        learn_audio.src ="../../../audio/baa-edited.ogg";
+        learn_audio.src ="../../../audio/baa.ogg";
         break;
       case 3:
-        learn_audio.src ="../../../audio/wal-edited.ogg";
+        learn_audio.src ="../../../audio/walk.ogg";
         break; 
     }
   }
   else{
     switch(n){
       case 1:
-        learn_audio.src ="../../../audio/quack-edited.mp3";
+        learn_audio.src ="../../../audio/quack.mp3";
         break;
       case 2:
-        learn_audio.src ="../../../audio/baa-edited.mp3";
+        learn_audio.src ="../../../audio/baa.mp3";
         break;
       case 3:
-        learn_audio.src ="../../../audio/wal-edited.mp3";
+        learn_audio.src ="../../../audio/walk.mp3";
         break;        
     }
   }

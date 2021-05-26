@@ -14,28 +14,33 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n) {
+  learn_audio.style.display = "block";
   if((navigator.userAgent.indexOf("Chrome") != -1))
   {
     switch (n) {
       case 1:
-        learn_audio.src = "../../../audio/pineapple.ogg";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src = "../../../audio/grapes.ogg";
+        learn_audio.src = "../../../audio/pineapple.ogg";
         break;
       case 3:
-        learn_audio.src = "../../../audio/apple.ogg";
+        learn_audio.src = "../../../audio/grapes.ogg";
         break;
       case 4:
-        learn_audio.src = "../../../audio/orange.ogg";
+        learn_audio.src = "../../../audio/apple.ogg";
         break;
       case 5:
-        learn_audio.src = "../../../audio/banana.ogg";
+        learn_audio.src = "../../../audio/orange.ogg";
         break;
       case 6:
-        learn_audio.src = "../../../audio/mango.ogg";
+        learn_audio.src = "../../../audio/banana.ogg";
         break;
       case 7:
+        learn_audio.src = "../../../audio/mango.ogg";
+        break;
+      case 8:
         learn_audio.src = "../../../audio/watermelon.ogg";
         break;
     }
@@ -44,30 +49,34 @@ function playAudio(n) {
     
     switch (n) {
       case 1:
-        learn_audio.src = "../../../audio/pineapple.mp3";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src = "../../../audio/grapes.mp3";
+        learn_audio.src = "../../../audio/pineapple.mp3";
         break;
       case 3:
-        learn_audio.src = "../../../audio/apple.mp3";
+        learn_audio.src = "../../../audio/grapes.mp3";
         break;
       case 4:
-        learn_audio.src = "../../../audio/orange.mp3";
+        learn_audio.src = "../../../audio/apple.mp3";
         break;
       case 5:
-        learn_audio.src = "../../../audio/banana.mp3";
+        learn_audio.src = "../../../audio/orange.mp3";
         break;
       case 6:
-        learn_audio.src = "../../../audio/mango.mp3";
+        learn_audio.src = "../../../audio/banana.mp3";
         break;
       case 7:
+        learn_audio.src = "../../../audio/mango.mp3";
+        break;
+      case 8:
         learn_audio.src = "../../../audio/watermelon.mp3";
         break;
     }
   }
   
-  if(n==7){
+  if(n==8){
     nextModuleBtn.style.display = "block";
   }else{
     nextModuleBtn.style.display = "none";

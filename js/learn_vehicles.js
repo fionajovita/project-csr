@@ -14,22 +14,27 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n) {
+  learn_audio.style.display = "block";
   if((navigator.userAgent.indexOf("Chrome") > -1))
   {
     switch (n) {
       case 1:
-        learn_audio.src = "../../../audio/cycle.ogg";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src = "../../../audio/aeroplane.ogg";
+        learn_audio.src = "../../../audio/cycle.ogg";
         break;
       case 3:
-        learn_audio.src = "../../../audio/bike.ogg";
+        learn_audio.src = "../../../audio/aeroplane.ogg";
         break;
       case 4:
-        learn_audio.src = "../../../audio/auto.ogg";
+        learn_audio.src = "../../../audio/bike.ogg";
         break;
       case 5:
+        learn_audio.src = "../../../audio/auto.ogg";
+        break;
+      case 6:
         learn_audio.src = "../../../audio/ambulance.ogg";
         break;
     }
@@ -37,23 +42,27 @@ function playAudio(n) {
   else{
     switch (n) {
       case 1:
-        learn_audio.src = "../../../audio/cycle.mp3";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src = "../../../audio/aeroplane.mp3";
+        learn_audio.src = "../../../audio/cycle.mp3";
         break;
       case 3:
-        learn_audio.src = "../../../audio/bike.mp3";
+        learn_audio.src = "../../../audio/aeroplane.mp3";
         break;
       case 4:
-        learn_audio.src = "../../../audio/auto.mp3";
+        learn_audio.src = "../../../audio/bike.mp3";
         break;
       case 5:
+        learn_audio.src = "../../../audio/auto.mp3";
+        break;
+      case 6:
         learn_audio.src = "../../../audio/ambulance.mp3";
         break;
     }
   }
-  if(n==5){
+  if(n==6){
     nextModuleBtn.style.display = "block";
   }else{
     nextModuleBtn.style.display = "none";

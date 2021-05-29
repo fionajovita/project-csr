@@ -14,16 +14,22 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function playAudio(n){
+  
+  learn_audio.style.display = "block";
   if((navigator.userAgent.indexOf("Chrome") != -1))
   {
     switch(n){
       case 1:
-        learn_audio.src ="../../../audio/quack.ogg";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src ="../../../audio/baa.ogg";
+        learn_audio.src ="../../../audio/quack.ogg";
         break;
       case 3:
+        learn_audio.src ="../../../audio/baa.ogg";
+        break;
+      case 4:
         learn_audio.src ="../../../audio/walk.ogg";
         break; 
     }
@@ -31,18 +37,22 @@ function playAudio(n){
   else{
     switch(n){
       case 1:
-        learn_audio.src ="../../../audio/quack.mp3";
+        learn_audio.style.display = "none";
+        learn_audio.src ="";
         break;
       case 2:
-        learn_audio.src ="../../../audio/baa.mp3";
+        learn_audio.src ="../../../audio/quack.mp3";
         break;
       case 3:
+        learn_audio.src ="../../../audio/baa.mp3";
+        break;
+      case 4:
         learn_audio.src ="../../../audio/walk.mp3";
         break;        
     }
   }
 
-  if(n==3){
+  if(n==4){
     nextModuleBtn.style.display = "block";
   }else{
     nextModuleBtn.style.display = "none";

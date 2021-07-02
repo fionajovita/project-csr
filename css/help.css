@@ -267,9 +267,9 @@
   
           
 
-        #contactUsButton{
-            padding: 5px 10px 5px 5px!important;
-            font-size: 16px !important;
+        #contactUsButton, #demoLinkButton, #aboutUsButton{
+            padding: 5px 10px 5px 10px!important;
+            font-size: 16px;
             background-color: #7280BC;
             font-weight: bold;
             text-shadow: 1px 1px #7280BC;
@@ -278,26 +278,35 @@
             -moz-border-radius: 5px;
             -webkit-border-radius: 5px;
             border: 1px solid #7280BC;
-            height: 35px;
-            /* border: none; */
+            height: 40px;
             cursor: pointer;
           
-            /* position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-top: 0px;
-            margin-left: 0px; */
-          
           }
+
           #contactUs-div{
               /* float:left;  */
               position:absolute;
-              top: 81.5%;
+              top: 80%;
               transform: translateY(-50%);
               left:43%
           }
+          #demoLink-div{
+            /* float:left;  */
+            position:absolute;
+            top: 90%;
+            transform: translateY(-50%);
+            left: 74%;
+        }
+        #aboutUs-div{
+          /* float:left;  */
+          position:absolute;
+          top: 90%;
+          transform: translateY(-50%);
+          left:21%
+      }
+
           
-          #contactUsButton span {
+          #contactUsButton span, #demoLinkButton span, #aboutUsButton span {
             cursor: pointer;
             display: inline-block;
             position: relative;

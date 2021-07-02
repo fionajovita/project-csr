@@ -1,42 +1,12 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* The Modal (background) */
-.modal {
-  
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  
-  
-}
 
 #main-container{
   height: 100vh;
   display: flex;
 }
 
-/* Modal Content */
-.modal-content {
-  
-  background: url("../images/welcome-prompt.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: auto;
-  padding: 50px;
-  /* width: 45%; */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -90px;
-  margin-left: -140px;
-  
-}
+
 
 /* The Close Button */
 .close {
@@ -93,7 +63,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #quizButton-div{
     /* float:left;  */
     position:absolute;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     left:52%
 }
@@ -184,6 +154,44 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #helpButton img{
   border-radius: 80px;
 }
+
+
+#videoButton {
+  font-size: 18px !important;
+  background-color: white;
+  font-weight: bold;
+  /* text-shadow: 1px 1px #7280BC; */
+  color: #ffffff;
+  border-color: white;
+   border-radius: 20px;
+  /* -moz-border-radius: 10px; */
+  /* -webkit-border-radius: 10px; */ 
+  /* border: 1px solid #7280BC; */
+  cursor: pointer;
+
+  display: inline-block;
+  position: relative;
+  box-shadow: none;
+  border: 0;
+  
+  border-radius: 80px;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  
+
+}
+#videoButton-div{
+  /* float:left;  */
+  border-radius: 20px;
+  position:absolute;
+  top: 85%;
+  transform: translateY(-75%);
+  left:59%
+}
+
+#videoButton img{
+  border-radius: 80px;
+}
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
@@ -219,7 +227,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #learnButton-div{
     overflow: hidden;
     position: absolute;
-    top: 69%;
+    top: 67%;
     transform: translateY(-50%);
     left: 37%;
 }

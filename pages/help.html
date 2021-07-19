@@ -24,11 +24,18 @@
   <link rel="stylesheet" href="../../css/help.css" />
 
   <script>
-    function showModal(){
+    function showModal1(){
             var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
             myModal.toggle()
-            // $('exampleModal').modal('show');
-        }
+    }
+    function showModal2(){
+        var myModal = new bootstrap.Modal(document.getElementById('demoLinkModal'), {})
+        myModal.toggle()
+    }
+    function showModal3(){
+        var myModal = new bootstrap.Modal(document.getElementById('aboutUsModal'), {})
+        myModal.toggle()
+    }
   </script>
 </head>
 
@@ -63,7 +70,7 @@
 
          <!--Modal body with image-->
          <div class="modal-body">
-             <img class="img-responsive" src="../../images/Contact Info.png"  style="max-height:300px;"/>
+             <img class="img-responsive" src="../../images/Contact Info.png"  style="max-height:300px; padding: 0px 50px;"/>
          </div>
 
          <div class="modal-footer">
@@ -77,6 +84,59 @@
  </div>
 </div>
 
+<div class="modal fade" 
+id="demoLinkModal"
+tabindex="-1" 
+role="dialog"
+aria-labelledby="demoLinkModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog" 
+    role="document">
+   <div class="modal-content">
+       
+
+       <!--Modal body with image-->
+       <div class="modal-body">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/0CWbGu4g-C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+       <div class="modal-footer">
+           <button type="button"
+                   class="btn btn-danger" 
+                   data-dismiss="modal">
+             Close
+         </button>
+       </div>
+   </div>
+</div>
+</div>  
+
+<div class="modal fade" 
+id="aboutUsModal"
+tabindex="-1" 
+role="dialog"
+aria-labelledby="aboutUsModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog" 
+    role="document">
+   <div class="modal-content">
+       
+
+       <!--Modal body with image-->
+      <div class="modal-body">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/7caeLod5lO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+       <div class="modal-footer">
+           <button type="button"
+                   class="btn btn-danger" 
+                   data-dismiss="modal">
+             Close
+         </button>
+       </div>
+   </div>
+</div>
+</div>
 
   <div class="container-fluid mt-5" style="overflow: hidden;position: relative;">
     <div class="d-flex align-items-center justify-content-center flex-column h-100">
@@ -84,14 +144,27 @@
       <div class="slideshow-container">      
         <div class="mySlides fading text-center">
           <img id="slideshow" src="../../images/helpPage1.png">
-        </div>
+          <div id="aboutUs-div">
+            <button id="aboutUsButton" onclick="showModal3();">
+              <!-- <span class="arrow2">>></span> -->
+              <span>&nbsp;&nbsp;&nbsp;About Us</span>
+            </button>
+          </div>
+            <div id="demoLink-div">
+            <button id="demoLinkButton" onclick="showModal2();">
+              
+              <span>Demo Video</span>
+            </button>
+            </div>
+            
+          </div>
         <div class="mySlides fading text-center">
           <img id="slideshow" src="../../images/helpPage2.png">
         </div>
         <div class="mySlides fading text-center">
           <img id="slideshow" src="../../images/helpPage3.png">
           <div id="contactUs-div">
-            <button id="contactUsButton" onclick="showModal();">
+            <button id="contactUsButton" onclick="showModal1();">
               <span class="arrow2">>></span><span>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</span>
             </button>
           </div>

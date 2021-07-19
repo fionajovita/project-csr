@@ -23,31 +23,38 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-    </script>
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
+  
   <script type="text/javascript">
     function preventBack() { window.history.forward(); }
     setTimeout("preventBack()", 0);
     window.onunload = function () { null };
   </script>
   <script src="js/index.js"></script>
-  <!-- <script>
-    function showModal(){
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
-            myModal.toggle()
+  <script>
+
+    function writeCookie() {
+            document.cookie = "firstUser" + "=" + "firstUser" + "; expires=Thu, 18 Dec 2100 12:00:00 UTC ; path=/";
         }
-  </script> -->
+
+    function checkCookieSet(){
+      var x = checkIfModuleCompleted();
+            if(!(document.cookie.match('(^|;) ?' + "firstUser" + '=([^;]*)(;|$)'))){
+              writeCookie();
+              var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+              myModal.toggle()
+            }
+    }
+    function showModal(){
+
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+              myModal.toggle()
+        }
+  </script>
 </head>
 
-<!-- <body ></body>onload="showModal();"> -->
-<body>
-<!--   
+<body onload="checkCookieSet();">
+
+  
   <div class="modal fade" 
   id="exampleModal"
   tabindex="-1" 
@@ -59,14 +66,15 @@
      <div class="modal-content">
          
 
-         <--Modal body with image-->
-         <!-- <div class="modal-body">
-          <iframe id="Geeks3" width="450" height="350"
-          src=
-"https://www.youtube.com/embed/lotbZQ55SgU" 
-          frameborder="0" allowfullscreen>
-  </iframe>
-            
+         <!--Modal body with image-->
+         <div class="modal-body">
+          <!-- <video width="320" height="240" controls>
+            <source src="videos/Paheli Goonj.mp4" type="video/mp4">
+            <source src="videos/Paheli-Goonj.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video> -->
+          
+          <iframe width="460" height="315" src="https://www.youtube.com/embed/7caeLod5lO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
 
          <div class="modal-footer">
@@ -77,14 +85,14 @@
            </button>
          </div>
      </div>
- </div> -->
-<!-- </div> --> 
+ </div>
+</div>
 
 
   <div id="main-container" class="container-fluid container justify-content-center align-items-center">
     <div class="row justify-content-center">
       <div class="col-12 col-sm-12 text-center position-relative">
-        <img src="images/homepage_bkp.png" id="background-img" class="img-fluid">
+        <img src="images/Paheli Goonj Bg v2.0.png" id="background-img" class="img-fluid">
         <div id="helpButton-div">
           <button id="helpButton" onclick="location.href = 'pages/help.html';">
            <img src="/images/helpBtnNew.png">
@@ -98,6 +106,11 @@
         <div id="learnButton-div">
           <button id="learnButton" onclick="location.href = 'pages/quiz/quiz.html';"><span>Quiz</span> <span
               class="arrow1">&lt;&lt;</span></button>
+        </div>
+        <div id="videoButton-div">
+          <button id="videoButton" onclick="showModal();">
+           <img src="/images/start.png">
+          </button>
         </div>
       </div>
     </div>

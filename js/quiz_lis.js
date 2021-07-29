@@ -86,7 +86,7 @@ function updateScore(questionNumber, answer){
     if(questionNumber == "q2"){
         q2.style.display = "none";
         q2m.pause();
-        if(answer == "op1"){
+        if(answer == "op3"){
             score+=1;              
             intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
@@ -102,7 +102,7 @@ function updateScore(questionNumber, answer){
         
         q3.style.display = "none";
         q3m.pause();    
-        if(answer == "op3"){
+        if(answer == "op4"){
             score+=1;               
             intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
@@ -119,7 +119,7 @@ function updateScore(questionNumber, answer){
         
         q4.style.display = "none";
         q4m.pause();    
-        if(answer == "op4"){
+        if(answer == "op2"){
             score+=1;               
             intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";

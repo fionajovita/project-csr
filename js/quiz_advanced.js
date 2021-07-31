@@ -119,7 +119,7 @@ function updateScore(questionNumber, answer){
         
         q4.style.display = "none";
         q4m.pause();    
-        if(answer == "op3"){
+        if(answer == "op1"){
             score+=1;               
             intmd_img.src="../../../images/right-answer.png";
             play_again.style.display = "none";
